@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.16)  6 NOV 2014 12:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.16)  6 NOV 2014 11:38
 entering extended mode
 **main.tex
-(C:\Users\Stefan\Documents\GitHub\med4Report\main.tex
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -460,10 +460,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip43
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count101
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip44
@@ -484,13 +480,13 @@ Package: amsbsy 1999/11/29 v1.2d
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count102
+\inf@bad=\count101
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count103
-\leftroot@=\count104
+\uproot@=\count102
+\leftroot@=\count103
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count105
-\DOTSCASE@=\count106
+\classnum@=\count104
+\DOTSCASE@=\count105
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -499,15 +495,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen118
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count107
-\c@MaxMatrixCols=\count108
+\macc@depth=\count106
+\c@MaxMatrixCols=\count107
 \dotsspace@=\muskip11
-\c@parentequation=\count109
-\dspbrk@lvl=\count110
+\c@parentequation=\count108
+\dspbrk@lvl=\count109
 \tag@help=\toks19
-\row@=\count111
-\column@=\count112
-\maxfields@=\count113
+\row@=\count110
+\column@=\count111
+\maxfields@=\count112
 \andhelp@=\toks20
 \eqnshift@=\dimen119
 \alignsep@=\dimen120
@@ -531,6 +527,27 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count113
+))
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty"
 Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
@@ -561,119 +578,11 @@ Package csquotes Info: ... configuration file loaded successfully.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\csquotes\csquotes.cfg"
 File: csquotes.cfg 
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
-)
-Package graphics Info: Driver file: pdftex.def on input line 91.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count122
-))
-\Gin@req@height=\dimen125
-\Gin@req@width=\dimen126
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
-Package: subfigure 2002/07/30 v2.1.4 subfigure package
-\subfigtopskip=\skip47
-\subfigcapskip=\skip48
-\subfigcaptopadj=\dimen127
-\subfigbottomskip=\skip49
-\subfigcapmargin=\dimen128
-\subfiglabelskip=\skip50
-\c@subfigure=\count123
-\c@lofdepth=\count124
-\c@subtable=\count125
-\c@lotdepth=\count126
-
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
-\subfig@top=\skip51
-\subfig@bottom=\skip52
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package xcolor Info: Package option `usenames' ignored on input line 216.
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
-Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen129
-\extrarowheight=\dimen130
-\NC@list=\toks24
-\extratabsurround=\skip53
-\backup@length=\skip54
-)
-\everycr=\toks25
-\minrowclearance=\skip55
-)
-\rownum=\count127
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
-File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
-))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\appendix\appendix.sty"
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count128
-\c@@ppsavesec=\count129
-\c@@ppsaveapp=\count130
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
-Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count131
-\calc@Bcount=\count132
-\calc@Adimen=\dimen131
-\calc@Bdimen=\dimen132
-\calc@Askip=\skip56
-\calc@Bskip=\skip57
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count133
-\calc@Cskip=\skip58
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
-Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
-File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
-)
-\AM@pagebox=\box28
-\AM@toc@title=\toks26
-\c@AM@survey=\count134
-\AM@templatesizebox=\box29
+\c@@pps=\count122
+\c@@ppsavesec=\count123
+\c@@ppsaveapp=\count124
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty"
 Package: biblatex 2014/06/25 v2.9a programmable bibliographies (PK/JW/AB)
@@ -684,106 +593,123 @@ AB)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count135
+\lrq@indent=\count125
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count136
-\c@listtotal=\count137
-\c@listcount=\count138
-\c@liststart=\count139
-\c@liststop=\count140
-\c@citecount=\count141
-\c@citetotal=\count142
-\c@multicitecount=\count143
-\c@multicitetotal=\count144
-\c@instcount=\count145
-\c@maxnames=\count146
-\c@minnames=\count147
-\c@maxitems=\count148
-\c@minitems=\count149
-\c@citecounter=\count150
-\c@savedcitecounter=\count151
-\c@uniquelist=\count152
-\c@uniquename=\count153
-\c@refsection=\count154
-\c@refsegment=\count155
-\c@maxextratitle=\count156
-\c@maxextratitleyear=\count157
-\c@maxextrayear=\count158
-\c@maxextraalpha=\count159
-\c@abbrvpenalty=\count160
-\c@highnamepenalty=\count161
-\c@lownamepenalty=\count162
-\c@maxparens=\count163
-\c@parenlevel=\count164
-\blx@tempcnta=\count165
-\blx@tempcntb=\count166
-\blx@tempcntc=\count167
-\blx@maxsection=\count168
-\blx@maxsegment@0=\count169
-\blx@notetype=\count170
-\blx@parenlevel@text=\count171
-\blx@parenlevel@foot=\count172
-\blx@sectionciteorder@0=\count173
-\labelnumberwidth=\skip59
-\labelalphawidth=\skip60
-\biblabelsep=\skip61
-\bibitemsep=\skip62
-\bibnamesep=\skip63
-\bibinitsep=\skip64
-\bibparsep=\skip65
-\bibhang=\skip66
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count126
+\c@listtotal=\count127
+\c@listcount=\count128
+\c@liststart=\count129
+\c@liststop=\count130
+\c@citecount=\count131
+\c@citetotal=\count132
+\c@multicitecount=\count133
+\c@multicitetotal=\count134
+\c@instcount=\count135
+\c@maxnames=\count136
+\c@minnames=\count137
+\c@maxitems=\count138
+\c@minitems=\count139
+\c@citecounter=\count140
+\c@savedcitecounter=\count141
+\c@uniquelist=\count142
+\c@uniquename=\count143
+\c@refsection=\count144
+\c@refsegment=\count145
+\c@maxextratitle=\count146
+\c@maxextratitleyear=\count147
+\c@maxextrayear=\count148
+\c@maxextraalpha=\count149
+\c@abbrvpenalty=\count150
+\c@highnamepenalty=\count151
+\c@lownamepenalty=\count152
+\c@maxparens=\count153
+\c@parenlevel=\count154
+\blx@tempcnta=\count155
+\blx@tempcntb=\count156
+\blx@tempcntc=\count157
+\blx@maxsection=\count158
+\blx@maxsegment@0=\count159
+\blx@notetype=\count160
+\blx@parenlevel@text=\count161
+\blx@parenlevel@foot=\count162
+\blx@sectionciteorder@0=\count163
+\labelnumberwidth=\skip47
+\labelalphawidth=\skip48
+\biblabelsep=\skip49
+\bibitemsep=\skip50
+\bibnamesep=\skip51
+\bibinitsep=\skip52
+\bibparsep=\skip53
+\bibhang=\skip54
 \blx@bcfin=\read1
 \blx@bcfout=\write3
-\c@mincomprange=\count174
-\c@maxcomprange=\count175
-\c@mincompwidth=\count176
+\c@mincomprange=\count164
+\c@maxcomprange=\count165
+\c@mincompwidth=\count166
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def")
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: ... file 'apa.dbx' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex-apa\apa.dbx"
+File: apa.dbx 2014/04/16 v6.5 APA biblatex style data model
+)
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count177
-\c@savedafterword=\count178
-\c@annotator=\count179
-\c@savedannotator=\count180
-\c@author=\count181
-\c@savedauthor=\count182
-\c@bookauthor=\count183
-\c@savedbookauthor=\count184
-\c@commentator=\count185
-\c@savedcommentator=\count186
-\c@editor=\count187
-\c@savededitor=\count188
-\c@editora=\count189
-\c@savededitora=\count190
-\c@editorb=\count191
-\c@savededitorb=\count192
-\c@editorc=\count193
-\c@savededitorc=\count194
-\c@foreword=\count195
-\c@savedforeword=\count196
-\c@holder=\count197
-\c@savedholder=\count198
-\c@introduction=\count199
-\c@savedintroduction=\count200
-\c@namea=\count201
-\c@savednamea=\count202
-\c@nameb=\count203
-\c@savednameb=\count204
-\c@namec=\count205
-\c@savednamec=\count206
-\c@translator=\count207
-\c@savedtranslator=\count208
-\c@shortauthor=\count209
-\c@savedshortauthor=\count210
-\c@shorteditor=\count211
-\c@savedshorteditor=\count212
+\c@afterword=\count167
+\c@savedafterword=\count168
+\c@annotator=\count169
+\c@savedannotator=\count170
+\c@author=\count171
+\c@savedauthor=\count172
+\c@bookauthor=\count173
+\c@savedbookauthor=\count174
+\c@commentator=\count175
+\c@savedcommentator=\count176
+\c@editor=\count177
+\c@savededitor=\count178
+\c@editora=\count179
+\c@savededitora=\count180
+\c@editorb=\count181
+\c@savededitorb=\count182
+\c@editorc=\count183
+\c@savededitorc=\count184
+\c@foreword=\count185
+\c@savedforeword=\count186
+\c@holder=\count187
+\c@savedholder=\count188
+\c@introduction=\count189
+\c@savedintroduction=\count190
+\c@namea=\count191
+\c@savednamea=\count192
+\c@nameb=\count193
+\c@savednameb=\count194
+\c@namec=\count195
+\c@savednamec=\count196
+\c@translator=\count197
+\c@savedtranslator=\count198
+\c@shortauthor=\count199
+\c@savedshortauthor=\count200
+\c@shorteditor=\count201
+\c@savedshorteditor=\count202
+\c@with=\count203
+\c@savedwith=\count204
+\c@writer=\count205
+\c@savedwriter=\count206
+\c@producer=\count207
+\c@savedproducer=\count208
+\c@execproducer=\count209
+\c@savedexecproducer=\count210
+\c@director=\count211
+\c@saveddirector=\count212
 \c@labelname=\count213
 \c@savedlabelname=\count214
 \c@institution=\count215
@@ -815,12 +741,12 @@ Normal \count register pool exhausted, switching to extended pool.
 \c@savedlanguage=\count283
 \c@pageref=\count284
 \c@savedpageref=\count285
-\shorthandwidth=\skip67
-\shortjournalwidth=\skip68
-\shortserieswidth=\skip69
-\shorttitlewidth=\skip70
-\shortauthorwidth=\skip71
-\shorteditorwidth=\skip72
+\shorthandwidth=\skip55
+\shortjournalwidth=\skip56
+\shortserieswidth=\skip57
+\shorttitlewidth=\skip58
+\shortauthorwidth=\skip59
+\shorteditorwidth=\skip60
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -840,21 +766,11 @@ File: biblatex.def
 \c@biburllcpenalty=\count291
 \c@smartand=\count292
 )
-Package biblatex Info: Trying to load bibliography style 'ieee'...
-Package biblatex Info: ... file 'ieee.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'apa'...
+Package biblatex Info: ... file 'apa.bbx' found.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex-ieee\ieee.bbx"
-File: ieee.bbx 2013/10/25 v1.1j biblatex bibliography style
-Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
-Package biblatex Info: ... file 'numeric-comp.bbx' found.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric-comp.bbx"
-File: numeric-comp.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx"
-File: numeric.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex-apa\apa.bbx"
+File: apa.bbx 2014/04/16 v6.5 APA biblatex references style
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -862,33 +778,20 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count293
 \c@bbx:relatedtotal=\count294
-))))
-Package biblatex Info: Trying to load citation style 'ieee'...
-Package biblatex Info: ... file 'ieee.cbx' found.
+))
+Package biblatex Info: Trying to load citation style 'apa'...
+Package biblatex Info: ... file 'apa.cbx' found.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex-ieee\ieee.cbx"
-File: ieee.cbx 2013/10/25 v1.1j biblatex citation style
-Package biblatex Info: Trying to load citation style 'numeric-comp'...
-Package biblatex Info: ... file 'numeric-comp.cbx' found.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric-comp.cbx"
-File: numeric-comp.cbx 2014/06/25 v2.9a biblatex citation style (PK/JW/AB)
-\c@cbx@tempcnta=\count295
-\c@cbx@tempcntb=\count296
-Package biblatex Info: Redefining '\cite'.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex-apa\apa.cbx"
+File: apa.cbx 2014/04/16 v6.5 APA biblatex citation style
 Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\citeyear'.
 Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\citeauthor'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -902,34 +805,54 @@ nment
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count297
-\float@exts=\toks27
-\float@box=\box30
-\@float@everytoks=\toks28
-\@floatcapt=\box31
+\c@float@type=\count295
+\float@exts=\toks24
+\float@box=\box28
+\@float@everytoks=\toks25
+\@floatcapt=\box29
 )
-\@float@every@algorithm=\toks29
-\c@algorithm=\count298
+\@float@every@algorithm=\toks26
+\c@algorithm=\count296
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count299
-\c@ALC@line=\count300
-\c@ALC@rem=\count301
-\c@ALC@depth=\count302
-\ALC@tlm=\skip73
-\algorithmicindent=\skip74
+\c@ALC@unique=\count297
+\c@ALC@line=\count298
+\c@ALC@rem=\count299
+\c@ALC@depth=\count300
+\ALC@tlm=\skip61
+\algorithmicindent=\skip62
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip63
+\subfigcapskip=\skip64
+\subfigcaptopadj=\dimen127
+\subfigbottomskip=\skip65
+\subfigcapmargin=\dimen128
+\subfiglabelskip=\skip66
+\c@subfigure=\count301
+\c@lofdepth=\count302
+\c@subtable=\count303
+\c@lotdepth=\count304
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip67
+\subfig@bottom=\skip68
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
-\fancy@headwidth=\skip75
-\f@ncyO@elh=\skip76
-\f@ncyO@erh=\skip77
-\f@ncyO@olh=\skip78
-\f@ncyO@orh=\skip79
-\f@ncyO@elf=\skip80
-\f@ncyO@erf=\skip81
-\f@ncyO@olf=\skip82
-\f@ncyO@orf=\skip83
+\fancy@headwidth=\skip69
+\f@ncyO@elh=\skip70
+\f@ncyO@erh=\skip71
+\f@ncyO@olh=\skip72
+\f@ncyO@orh=\skip73
+\f@ncyO@elf=\skip74
+\f@ncyO@erf=\skip75
+\f@ncyO@olf=\skip76
+\f@ncyO@orf=\skip77
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
@@ -937,90 +860,149 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen133
-\captionmargin@=\dimen134
-\captionwidth=\dimen135
-\caption@tempdima=\dimen136
-\caption@indent=\dimen137
-\caption@parindent=\dimen138
-\caption@hangindent=\dimen139
+\captionmargin=\dimen129
+\captionmargin@=\dimen130
+\captionwidth=\dimen131
+\caption@tempdima=\dimen132
+\caption@indent=\dimen133
+\caption@parindent=\dimen134
+\caption@hangindent=\dimen135
 )
-\c@ContinuedFloat=\count303
+\c@ContinuedFloat=\count305
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count304
-\lst@gtempboxa=\box32
-\lst@token=\toks30
-\lst@length=\count305
-\lst@currlwidth=\dimen140
-\lst@column=\count306
-\lst@pos=\count307
-\lst@lostspace=\dimen141
-\lst@width=\dimen142
-\lst@newlines=\count308
-\lst@lineno=\count309
-\lst@maxwidth=\dimen143
+\lst@mode=\count306
+\lst@gtempboxa=\box30
+\lst@token=\toks27
+\lst@length=\count307
+\lst@currlwidth=\dimen136
+\lst@column=\count308
+\lst@pos=\count309
+\lst@lostspace=\dimen137
+\lst@width=\dimen138
+\lst@newlines=\count310
+\lst@lineno=\count311
+\lst@maxwidth=\dimen139
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count310
-\lst@skipnumbers=\count311
-\lst@framebox=\box33
+\c@lstnumber=\count312
+\lst@skipnumbers=\count313
+\lst@framebox=\box31
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
-Package: placeins 2005/04/18  v 2.2
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
-Package: parskip 2001/04/09 non-zero parskip adjustments
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen140
+\extrarowheight=\dimen141
+\NC@list=\toks28
+\extratabsurround=\skip78
+\backup@length=\skip79
+)
+\everycr=\toks29
+\minrowclearance=\skip80
+)
+\rownum=\count314
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
+Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
+Package biblatex Info: ... file 'english-apa.lbx' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex-apa\english-apa.lbx"
+File: english-apa.lbx 2014/04/16 v6.5 APA biblatex localisation
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\lbx\american.lbx"
+File: american.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx"
 File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
+)))
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\main.aux
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\readersguide.a
+ux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\glossary.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\introduction.a
+ux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\pre_analysis.a
+ux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\analysis.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\lor.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\methods.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\design.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\implementation
+.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\evaluation.aux
+) (C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\redesign.aux
 )
-(C:\Users\Stefan\Documents\GitHub\med4Report\main.aux
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\readersguide.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\glossary.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\introduction.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\pre_analysis.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\analysis.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\lor.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\design.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\implementation.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\evaluation.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\discussion.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\conclusion.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\appendices\appendice.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 88.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\discussion.aux
+)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\conclusion.aux
+)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\appendices\appendice.au
+x))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 71.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -1057,37 +1039,37 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 88.
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring OFF on input line 71.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count312
+\c@section@level=\count315
 )
-LaTeX Info: Redefining \ref on input line 88.
-LaTeX Info: Redefining \pageref on input line 88.
-LaTeX Info: Redefining \nameref on input line 88.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
 
-(C:\Users\Stefan\Documents\GitHub\med4Report\main.out)
-(C:\Users\Stefan\Documents\GitHub\med4Report\main.out)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\main.out)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\main.out)
 \@outlinefile=\write4
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
-\scratchdimen=\dimen144
-\scratchbox=\box35
-\nofMPsegments=\count314
-\nofMParguments=\count315
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count316
-\MPscratchDim=\dimen145
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count316
+\scratchdimen=\dimen142
+\scratchbox=\box33
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen143
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks31
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1096,1206 +1078,181 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' not found.
 
 No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 88.
-Package biblatex Info: Reference segment=0 on input line 88.
+Package biblatex Info: Reference section=0 on input line 71.
+Package biblatex Info: Reference segment=0 on input line 71.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count319
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\readersguide.tex)
-[1
+\c@lstlisting=\count322
+
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\readersguide.t
+ex) [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\glossary.tex
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 11.
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\glossary.tex)
+[2
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+
+]
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 84.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 11.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 84.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 11.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 84.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 11.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 84.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 11.
+(Font)              <12> on input line 84.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 11.
+(Font)              <8> on input line 84.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 11.
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+(Font)              <6> on input line 84.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [2
-
-
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 101.
-
-(C:\Users\Stefan\Documents\GitHub\med4Report\main.toc [3
-
-])
-\tf@toc=\write5
- [4]
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\introduction.tex)
-[1
-
-
-] (C:\Users\Stefan\Documents\GitHub\med4Report\chapters\pre_analysis.tex
-
-LaTeX Warning: Citation 'Wiki2014-2' on page 2 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'Kramer1993' on page 2 undefined on input line 10.
-
-[2
-
-
-]
-
-LaTeX Warning: Citation 'Hermann2011' on page 3 undefined on input line 46.
-
-
-LaTeX Warning: Citation 'Friendly95' on page 3 undefined on input line 49.
-
-
-LaTeX Warning: Citation 'Barrass1999' on page 3 undefined on input line 68.
-
-
-LaTeX Warning: Citation 'Barrass1999' on page 3 undefined on input line 70.
-
-
-LaTeX Warning: Citation 'Barrass1999' on page 3 undefined on input line 71.
-
-[3]
-
-LaTeX Warning: Citation 'Barrass1999' on page 4 undefined on input line 74.
-
-
-LaTeX Warning: Citation 'Barrass1999' on page 4 undefined on input line 76.
-
-
-LaTeX Warning: Citation 'Girvan2005' on page 4 undefined on input line 78.
-
-
-LaTeX Warning: Citation 'Girvan2005' on page 4 undefined on input line 80.
-
-
-LaTeX Warning: Citation 'Girvan2005' on page 4 undefined on input line 83.
-
-<images/Sonification1.png, id=259, 323.2075pt x 178.6675pt>
-File: images/Sonification1.png Graphic file (type png)
-
-<use images/Sonification1.png>
-Package pdftex.def Info: images/Sonification1.png used on input line 87.
-(pdftex.def)             Requested size: 291.78174pt x 161.3036pt.
-
-
-LaTeX Warning: Citation 'Girvan2005' on page 4 undefined on input line 94.
-
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 96.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [4]
-
-LaTeX Warning: Citation 'Girvan2005' on page 5 undefined on input line 101.
-
-
-LaTeX Warning: Citation 'Hermann2011' on page 5 undefined on input line 121.
-
-[5 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Sonification1.png>]
-
-LaTeX Warning: Citation 'Hermann2011' on page 6 undefined on input line 131.
-
-[6]
-
-LaTeX Warning: Citation 'Wiki2014-1' on page 7 undefined on input line 189.
-
-[7]
-
-LaTeX Warning: Citation 'Shuman1978' on page 8 undefined on input line 195.
-
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 199.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 199.
- [8]
-<images/Dmi1.png, id=294, 407.6028pt x 366.6498pt>
-File: images/Dmi1.png Graphic file (type png)
- <use images/Dmi1.png>
-Package pdftex.def Info: images/Dmi1.png used on input line 236.
-(pdftex.def)             Requested size: 312.62466pt x 281.21906pt.
-
-[9 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Dmi1.png>] [10]
-<images/Tv21.png, id=311, 206.2104pt x 343.0416pt>
-File: images/Tv21.png Graphic file (type png)
- <use images/Tv21.png>
-Package pdftex.def Info: images/Tv21.png used on input line 303.
-(pdftex.def)             Requested size: 166.7306pt x 277.37012pt.
-
-[11 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Tv21.png>] [12]
-<images/Yahoo1.png, id=323, 469.755pt x 278.4804pt>
-File: images/Yahoo1.png Graphic file (type png)
- <use images/Yahoo1.png>
-Package pdftex.def Info: images/Yahoo1.png used on input line 362.
-(pdftex.def)             Requested size: 395.98996pt x 234.75053pt.
-
-[13 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Yahoo1.png>]
-<images/Instaweather1.png, id=330, 436.029pt x 370.5042pt>
-File: images/Instaweather1.png Graphic file (type png)
-
-<use images/Instaweather1.png>
-Package pdftex.def Info: images/Instaweather1.png used on input line 385.
-(pdftex.def)             Requested size: 291.78174pt x 247.94818pt.
- [14 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Instaweather1.png>]) [
-15]
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\analysis.tex
-
-LaTeX Warning: Citation 'Feder2012' on page 16 undefined on input line 23.
-
-[16
-
-
-]
-
-LaTeX Warning: Citation 'Barrass1999' on page 17 undefined on input line 41.
-
-
-LaTeX Warning: Citation 'Barrass1998' on page 17 undefined on input line 47.
-
-
-LaTeX Warning: Citation 'Barrass1999' on page 17 undefined on input line 57.
-
-
-LaTeX Warning: Citation 'Barrass1999' on page 17 undefined on input line 59.
-
-[17]
-
-LaTeX Warning: Citation 'Vickers2012' on page 18 undefined on input line 74.
-
-
-LaTeX Warning: Citation 'Vickers2012' on page 18 undefined on input line 80.
-
-<images/Semiosis1.png, id=354, 271.2534pt x 113.7048pt>
-File: images/Semiosis1.png Graphic file (type png)
-
-<use images/Semiosis1.png>
-Package pdftex.def Info: images/Semiosis1.png used on input line 84.
-(pdftex.def)             Requested size: 208.41644pt x 87.36385pt.
- [18]
-
-LaTeX Warning: Citation 'walker2011' on page 19 undefined on input line 95.
-
-[19 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Semiosis1.png>]
-
-LaTeX Warning: Citation 'walker2011' on page 20 undefined on input line 138.
-
-[20]
-
-LaTeX Warning: Citation 'Hermann2011' on page 21 undefined on input line 169.
-
-
-LaTeX Warning: Citation 'Hermann2011' on page 21 undefined on input line 181.
-
-[21]) [22] (C:\Users\Stefan\Documents\GitHub\med4Report\chapters\lor.tex)
-[23
-
-
-] (C:\Users\Stefan\Documents\GitHub\med4Report\chapters\design.tex
-<images/Design1.jpg, id=395, 2489.3pt x 3521.155pt>
-File: images/Design1.jpg Graphic file (type jpg)
- <use images/Design1.jpg>
-Package pdftex.def Info: images/Design1.jpg used on input line 20.
-(pdftex.def)             Requested size: 208.41644pt x 294.80789pt.
-
-[24
-
-
- <C:/Users/Stefan/Documents/GitHub/med4Report/images/Design1.jpg>] [25]
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\main.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 69.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 69.
+(Font)              <10.95> on input line 9.
+)
+\tf@toc=\write5
+ [3
 
-[26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37]) [38]
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\implementation.tex
-<images/Implementation11.jpg, id=542, 541.05882pt x 1079.02588pt>
-File: images/Implementation11.jpg Graphic file (type jpg)
-
-<use images/Implementation11.jpg>
-Package pdftex.def Info: images/Implementation11.jpg used on input line 37.
-(pdftex.def)             Requested size: 291.78174pt x 581.90793pt.
- [39
-
-
-] [40 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Implementation11.jpg>
 ]
-<images/Implementation1.png, id=554, 568.524pt x 476.982pt>
-File: images/Implementation1.png Graphic file (type png)
-
-<use images/Implementation1.png>
-Package pdftex.def Info: images/Implementation1.png used on input line 66.
-(pdftex.def)             Requested size: 416.83289pt x 349.72237pt.
- [41] [42 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Implementation1.p
-ng>]
-<images/Implementation2.png, id=572, 549.252pt x 181.27725pt>
-File: images/Implementation2.png Graphic file (type png)
-
-<use images/Implementation2.png>
-Package pdftex.def Info: images/Implementation2.png used on input line 80.
-(pdftex.def)             Requested size: 291.78174pt x 96.30054pt.
-
-<images/Implementation3.png, id=574, 688.974pt x 214.401pt>
-File: images/Implementation3.png Graphic file (type png)
-
-<use images/Implementation3.png>
-Package pdftex.def Info: images/Implementation3.png used on input line 92.
-(pdftex.def)             Requested size: 208.41644pt x 64.85403pt.
-
-<images/Implementation4.png, id=576, 254.75175pt x 253.54726pt>
-File: images/Implementation4.png Graphic file (type png)
-
-<use images/Implementation4.png>
-Package pdftex.def Info: images/Implementation4.png used on input line 109.
-(pdftex.def)             Requested size: 125.05113pt x 124.45975pt.
- [43 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Implementation2.png> <
-C:/Users/Stefan/Documents/GitHub/med4Report/images/Implementation3.png>]
-<images/Implementation5.png, id=588, 281.25075pt x 197.538pt>
-File: images/Implementation5.png Graphic file (type png)
-
-<use images/Implementation5.png>
-Package pdftex.def Info: images/Implementation5.png used on input line 126.
-(pdftex.def)             Requested size: 125.05113pt x 87.83028pt.
-
-<images/Implementation6.png, id=589, 393.8715pt x 374.5995pt>
-File: images/Implementation6.png Graphic file (type png)
-
-<use images/Implementation6.png>
-Package pdftex.def Info: images/Implementation6.png used on input line 141.
-(pdftex.def)             Requested size: 125.05113pt x 118.93115pt.
-
-<images/Implementation7.png, id=591, 244.5135pt x 204.765pt>
-File: images/Implementation7.png Graphic file (type png)
-
-<use images/Implementation7.png>
-Package pdftex.def Info: images/Implementation7.png used on input line 157.
-(pdftex.def)             Requested size: 125.05113pt x 104.72246pt.
- [44 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Implementation4.png> <
-C:/Users/Stefan/Documents/GitHub/med4Report/images/Implementation5.png> <C:/Use
-rs/Stefan/Documents/GitHub/med4Report/images/Implementation6.png>]
-<images/Implementation8.png, id=603, 280.04625pt x 216.20775pt>
-File: images/Implementation8.png Graphic file (type png)
-
-<use images/Implementation8.png>
-Package pdftex.def Info: images/Implementation8.png used on input line 173.
-(pdftex.def)             Requested size: 125.05113pt x 96.547pt.
-
-<images/Implementation9.png, id=604, 165.61874pt x 168.63pt>
-File: images/Implementation9.png Graphic file (type png)
-
-<use images/Implementation9.png>
-Package pdftex.def Info: images/Implementation9.png used on input line 188.
-(pdftex.def)             Requested size: 83.3653pt x 84.88086pt.
- [45 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Implementation7.png> <
-C:/Users/Stefan/Documents/GitHub/med4Report/images/Implementation8.png> <C:/Use
-rs/Stefan/Documents/GitHub/med4Report/images/Implementation9.png>]
-<images/Implementation10.png, id=619, 386.04225pt x 299.9205pt>
-File: images/Implementation10.png Graphic file (type png)
-
-<use images/Implementation10.png>
-Package pdftex.def Info: images/Implementation10.png used on input line 206.
-(pdftex.def)             Requested size: 125.05113pt x 97.15265pt.
-) [46 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Implementation10.png>
-]
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\evaluation.tex [47
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\introduction.t
+ex) [1
 
 
 ]
-[48] [49]
-
-LaTeX Warning: Citation 'Field2003' on page 50 undefined on input line 145.
-
-[50] [51]
-
-LaTeX Warning: Citation 'Gaten2000' on page 52 undefined on input line 208.
-
-
-LaTeX Warning: Citation 'Gaten2000' on page 52 undefined on input line 214.
-
-<images/Evaluation1.jpg, id=665, 1019.30812pt x 471.26062pt>
-File: images/Evaluation1.jpg Graphic file (type jpg)
-
-<use images/Evaluation1.jpg>
-Package pdftex.def Info: images/Evaluation1.jpg used on input line 235.
-(pdftex.def)             Requested size: 416.83289pt x 192.71474pt.
- [52 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Evaluation1.jpg>]
-<images/Evaluation2.jpg, id=673, 563.10374pt x 421.575pt>
-File: images/Evaluation2.jpg Graphic file (type jpg)
-
-<use images/Evaluation2.jpg>
-Package pdftex.def Info: images/Evaluation2.jpg used on input line 273.
-(pdftex.def)             Requested size: 291.78174pt x 218.44833pt.
-
-<images/Evaluation3.jpg, id=674, 563.10374pt x 421.575pt>
-File: images/Evaluation3.jpg Graphic file (type jpg)
-
-<use images/Evaluation3.jpg>
-Package pdftex.def Info: images/Evaluation3.jpg used on input line 287.
-(pdftex.def)             Requested size: 208.41644pt x 156.03175pt.
- [53] [54 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Evaluation2.jpg> 
-<C:/Users/Stefan/Documents/GitHub/med4Report/images/Evaluation3.jpg>] <images/E
-valuation4.jpg, id=688, 648.92438pt x 617.30624pt>
-File: images/Evaluation4.jpg Graphic file (type jpg)
-
-<use images/Evaluation4.jpg>
-Package pdftex.def Info: images/Evaluation4.jpg used on input line 311.
-(pdftex.def)             Requested size: 291.78174pt x 277.56859pt.
- [55 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Evaluation4.jpg>]
-<images/Evaluation5.jpg, id=697, 563.10374pt x 421.575pt>
-File: images/Evaluation5.jpg Graphic file (type jpg)
-
-<use images/Evaluation5.jpg>
-Package pdftex.def Info: images/Evaluation5.jpg used on input line 348.
-(pdftex.def)             Requested size: 291.78174pt x 218.44833pt.
-
-<images/Evaluation6.jpg, id=698, 563.10374pt x 421.575pt>
-File: images/Evaluation6.jpg Graphic file (type jpg)
-
-<use images/Evaluation6.jpg>
-Package pdftex.def Info: images/Evaluation6.jpg used on input line 363.
-(pdftex.def)             Requested size: 291.78174pt x 218.44833pt.
- [56 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Evaluation5.jpg>]
-<images/Evaluation7.jpg, id=708, 563.10374pt x 421.575pt>
-File: images/Evaluation7.jpg Graphic file (type jpg)
-
-<use images/Evaluation7.jpg>
-Package pdftex.def Info: images/Evaluation7.jpg used on input line 388.
-(pdftex.def)             Requested size: 291.78174pt x 218.44833pt.
- [57 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Evaluation6.jpg>]
-<images/Evaluation8.jpg, id=717, 563.10374pt x 421.575pt>
-File: images/Evaluation8.jpg Graphic file (type jpg)
-
-<use images/Evaluation8.jpg>
-Package pdftex.def Info: images/Evaluation8.jpg used on input line 403.
-(pdftex.def)             Requested size: 291.78174pt x 218.44833pt.
- [58 <C:/Users/Stefan/Documents/GitHub/med4Report/images/Evaluation7.jpg>]) [59
- <C:/Users/Stefan/Documents/GitHub/med4Report/images/Evaluation8.jpg>]
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\discussion.tex [60
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\pre_analysis.t
+ex) [2
 
 
 ]
-[61] [62]) [63]
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\conclusion.tex [64
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\analysis.tex)
+[3
 
 
-])
-[65]
+] (C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\lor.tex)
+[4
 
-LaTeX Warning: Empty bibliography on input line 137.
 
-(C:\Users\Stefan\Documents\GitHub\med4Report\appendices\appendice.tex
-<./appendices/Scan.pdf, id=763, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
+]
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\methods.tex)
+[5
 
-<use ./appendices/Scan.pdf>
-Package pdftex.def Info: ./appendices/Scan.pdf used on input line 12.
-(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf>
-Package pdftex.def Info: ./appendices/Scan.pdf used on input line 12.
-(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
- [66
+
+] (C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\design.tex) 
+[6
+
+
+]
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\implementation
+.tex) [7
+
+
+]
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\evaluation.tex
+) [8
+
+
+]
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\redesign.tex)
+[9
+
+
+]
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\discussion.tex
+) [10
+
+
+]
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\conclusion.tex
+) [11
+
+
+]
+
+LaTeX Warning: Empty bibliography on input line 116.
+
+
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\appendices\appendice.te
+x) [12
 
 
 
 
 ]
-<./appendices/Scan.pdf, id=770, page=1, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 1>
-Package pdftex.def Info: ./appendices/Scan.pdf, page1 used on input line 12.
-(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 1>
-Package pdftex.def Info: ./appendices/Scan.pdf, page1 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 1>
-Package pdftex.def Info: ./appendices/Scan.pdf, page1 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 1>
-Package pdftex.def Info: ./appendices/Scan.pdf, page1 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 1>
-Package pdftex.def Info: ./appendices/Scan.pdf, page1 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [67 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=813, page=2, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 2>
-Package pdftex.def Info: ./appendices/Scan.pdf, page2 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 2>
-Package pdftex.def Info: ./appendices/Scan.pdf, page2 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 2>
-Package pdftex.def Info: ./appendices/Scan.pdf, page2 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [68 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=845, page=3, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 3>
-Package pdftex.def Info: ./appendices/Scan.pdf, page3 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 3>
-Package pdftex.def Info: ./appendices/Scan.pdf, page3 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 3>
-Package pdftex.def Info: ./appendices/Scan.pdf, page3 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [69 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=870, page=4, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 4>
-Package pdftex.def Info: ./appendices/Scan.pdf, page4 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 4>
-Package pdftex.def Info: ./appendices/Scan.pdf, page4 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 4>
-Package pdftex.def Info: ./appendices/Scan.pdf, page4 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [70 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=899, page=5, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 5>
-Package pdftex.def Info: ./appendices/Scan.pdf, page5 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 5>
-Package pdftex.def Info: ./appendices/Scan.pdf, page5 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 5>
-Package pdftex.def Info: ./appendices/Scan.pdf, page5 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [71 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=942, page=6, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 6>
-Package pdftex.def Info: ./appendices/Scan.pdf, page6 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 6>
-Package pdftex.def Info: ./appendices/Scan.pdf, page6 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 6>
-Package pdftex.def Info: ./appendices/Scan.pdf, page6 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [72 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=971, page=7, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 7>
-Package pdftex.def Info: ./appendices/Scan.pdf, page7 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 7>
-Package pdftex.def Info: ./appendices/Scan.pdf, page7 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 7>
-Package pdftex.def Info: ./appendices/Scan.pdf, page7 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [73 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=995, page=8, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 8>
-Package pdftex.def Info: ./appendices/Scan.pdf, page8 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 8>
-Package pdftex.def Info: ./appendices/Scan.pdf, page8 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 8>
-Package pdftex.def Info: ./appendices/Scan.pdf, page8 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [74 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=1020, page=9, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 9>
-Package pdftex.def Info: ./appendices/Scan.pdf, page9 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 9>
-Package pdftex.def Info: ./appendices/Scan.pdf, page9 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 9>
-Package pdftex.def Info: ./appendices/Scan.pdf, page9 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [75 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=1053, page=10, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 10>
-Package pdftex.def Info: ./appendices/Scan.pdf, page10 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 10>
-Package pdftex.def Info: ./appendices/Scan.pdf, page10 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 10>
-Package pdftex.def Info: ./appendices/Scan.pdf, page10 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [76 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=1085, page=11, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 11>
-Package pdftex.def Info: ./appendices/Scan.pdf, page11 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 11>
-Package pdftex.def Info: ./appendices/Scan.pdf, page11 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 11>
-Package pdftex.def Info: ./appendices/Scan.pdf, page11 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [77 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=1127, page=12, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 12>
-Package pdftex.def Info: ./appendices/Scan.pdf, page12 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 12>
-Package pdftex.def Info: ./appendices/Scan.pdf, page12 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 12>
-Package pdftex.def Info: ./appendices/Scan.pdf, page12 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [78 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=1160, page=13, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 13>
-Package pdftex.def Info: ./appendices/Scan.pdf, page13 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 13>
-Package pdftex.def Info: ./appendices/Scan.pdf, page13 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 13>
-Package pdftex.def Info: ./appendices/Scan.pdf, page13 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [79 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=1180, page=14, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 14>
-Package pdftex.def Info: ./appendices/Scan.pdf, page14 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 14>
-Package pdftex.def Info: ./appendices/Scan.pdf, page14 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 14>
-Package pdftex.def Info: ./appendices/Scan.pdf, page14 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [80 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=1206, page=15, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 15>
-Package pdftex.def Info: ./appendices/Scan.pdf, page15 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 15>
-Package pdftex.def Info: ./appendices/Scan.pdf, page15 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 15>
-Package pdftex.def Info: ./appendices/Scan.pdf, page15 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [81 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=1249, page=16, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 16>
-Package pdftex.def Info: ./appendices/Scan.pdf, page16 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 16>
-Package pdftex.def Info: ./appendices/Scan.pdf, page16 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 16>
-Package pdftex.def Info: ./appendices/Scan.pdf, page16 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [82 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=1280, page=17, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 17>
-Package pdftex.def Info: ./appendices/Scan.pdf, page17 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 17>
-Package pdftex.def Info: ./appendices/Scan.pdf, page17 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 17>
-Package pdftex.def Info: ./appendices/Scan.pdf, page17 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [83 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Scan.pdf, id=1317, page=18, 598.235pt x 845.1575pt>
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 18>
-Package pdftex.def Info: ./appendices/Scan.pdf, page18 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
- <use ./appendices/Scan.pdf, page 18>
-Package pdftex.def Info: ./appendices/Scan.pdf, page18 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
-File: ./appendices/Scan.pdf Graphic file (type pdf)
-
-<use ./appendices/Scan.pdf, page 18>
-Package pdftex.def Info: ./appendices/Scan.pdf, page18 used on input line 12.
-(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
- [84 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Scan.pdf, page is 
-rotated 270 degrees>]
-<./appendices/Ark1.pdf, id=1347, 597.23125pt x 845.1575pt>
-File: ./appendices/Ark1.pdf Graphic file (type pdf)
-
-<use ./appendices/Ark1.pdf>
-Package pdftex.def Info: ./appendices/Ark1.pdf used on input line 19.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: ./appendices/Ark1.pdf Graphic file (type pdf)
- <use ./appendices/Ark1.pdf>
-Package pdftex.def Info: ./appendices/Ark1.pdf used on input line 19.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
- [85]
-<./appendices/Ark1.pdf, id=1354, page=1, 597.23125pt x 845.1575pt>
-File: ./appendices/Ark1.pdf Graphic file (type pdf)
-
-<use ./appendices/Ark1.pdf, page 1>
-Package pdftex.def Info: ./appendices/Ark1.pdf, page1 used on input line 19.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: ./appendices/Ark1.pdf Graphic file (type pdf)
- <use ./appendices/Ark1.pdf, page 1>
-Package pdftex.def Info: ./appendices/Ark1.pdf, page1 used on input line 19.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Ark1.pdf Graphic file (type pdf)
-
-<use ./appendices/Ark1.pdf, page 1>
-Package pdftex.def Info: ./appendices/Ark1.pdf, page1 used on input line 19.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Ark1.pdf Graphic file (type pdf)
- <use ./appendices/Ark1.pdf, page 1>
-Package pdftex.def Info: ./appendices/Ark1.pdf, page1 used on input line 19.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Ark1.pdf Graphic file (type pdf)
-
-<use ./appendices/Ark1.pdf, page 1>
-Package pdftex.def Info: ./appendices/Ark1.pdf, page1 used on input line 19.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [86 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Ark1.pdf>]
-<./appendices/Appendix3.pdf, id=1378, 597.23125pt x 845.1575pt>
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf>
-Package pdftex.def Info: ./appendices/Appendix3.pdf used on input line 28.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
- <use ./appendices/Appendix3.pdf>
-Package pdftex.def Info: ./appendices/Appendix3.pdf used on input line 28.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
- [87]
-<./appendices/Appendix3.pdf, id=1386, page=1, 597.23125pt x 845.1575pt>
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix3.pdf, page1 used on input line 2
-8.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix3.pdf, page1 used on input line 2
-8.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix3.pdf, page1 used on input line 2
-8.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix3.pdf, page1 used on input line 2
-8.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix3.pdf, page1 used on input line 2
-8.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [88 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Appendix3.pdf>]
-<./appendices/Appendix3.pdf, id=1467, page=2, 597.23125pt x 845.1575pt>
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf, page 2>
-Package pdftex.def Info: ./appendices/Appendix3.pdf, page2 used on input line 2
-8.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf, page 2>
-Package pdftex.def Info: ./appendices/Appendix3.pdf, page2 used on input line 2
-8.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf, page 2>
-Package pdftex.def Info: ./appendices/Appendix3.pdf, page2 used on input line 2
-8.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [89 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Appendix3.pdf>]
-<./appendices/Appendix3.pdf, id=1472, page=3, 597.23125pt x 845.1575pt>
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf, page 3>
-Package pdftex.def Info: ./appendices/Appendix3.pdf, page3 used on input line 2
-8.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf, page 3>
-Package pdftex.def Info: ./appendices/Appendix3.pdf, page3 used on input line 2
-8.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix3.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix3.pdf, page 3>
-Package pdftex.def Info: ./appendices/Appendix3.pdf, page3 used on input line 2
-8.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [90 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Appendix3.pdf>]
-<./appendices/pretest2.pdf, id=1477, 597.55246pt x 845.07718pt>
-File: ./appendices/pretest2.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest2.pdf>
-Package pdftex.def Info: ./appendices/pretest2.pdf used on input line 33.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: ./appendices/pretest2.pdf Graphic file (type pdf)
- <use ./appendices/pretest2.pdf>
-Package pdftex.def Info: ./appendices/pretest2.pdf used on input line 33.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
- [91]
-<./appendices/pretest2.pdf, id=1484, page=1, 597.55246pt x 845.07718pt>
-File: ./appendices/pretest2.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest2.pdf, page 1>
-Package pdftex.def Info: ./appendices/pretest2.pdf, page1 used on input line 33
-.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: ./appendices/pretest2.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest2.pdf, page 1>
-Package pdftex.def Info: ./appendices/pretest2.pdf, page1 used on input line 33
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: ./appendices/pretest2.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest2.pdf, page 1>
-Package pdftex.def Info: ./appendices/pretest2.pdf, page1 used on input line 33
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: ./appendices/pretest2.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest2.pdf, page 1>
-Package pdftex.def Info: ./appendices/pretest2.pdf, page1 used on input line 33
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: ./appendices/pretest2.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest2.pdf, page 1>
-Package pdftex.def Info: ./appendices/pretest2.pdf, page1 used on input line 33
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [92 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/pretest2.pdf>]
-<./appendices/pretest2.pdf, id=1517, page=2, 597.55246pt x 845.07718pt>
-File: ./appendices/pretest2.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest2.pdf, page 2>
-Package pdftex.def Info: ./appendices/pretest2.pdf, page2 used on input line 33
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: ./appendices/pretest2.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest2.pdf, page 2>
-Package pdftex.def Info: ./appendices/pretest2.pdf, page2 used on input line 33
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: ./appendices/pretest2.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest2.pdf, page 2>
-Package pdftex.def Info: ./appendices/pretest2.pdf, page2 used on input line 33
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [93 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/pretest2.pdf>]
-<./appendices/pretest3.pdf, id=1524, 597.55246pt x 845.07718pt>
-File: ./appendices/pretest3.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest3.pdf>
-Package pdftex.def Info: ./appendices/pretest3.pdf used on input line 38.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: ./appendices/pretest3.pdf Graphic file (type pdf)
- <use ./appendices/pretest3.pdf>
-Package pdftex.def Info: ./appendices/pretest3.pdf used on input line 38.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
- [94]
-<./appendices/pretest3.pdf, id=1531, page=1, 597.55246pt x 845.07718pt>
-File: ./appendices/pretest3.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest3.pdf, page 1>
-Package pdftex.def Info: ./appendices/pretest3.pdf, page1 used on input line 38
-.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: ./appendices/pretest3.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest3.pdf, page 1>
-Package pdftex.def Info: ./appendices/pretest3.pdf, page1 used on input line 38
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: ./appendices/pretest3.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest3.pdf, page 1>
-Package pdftex.def Info: ./appendices/pretest3.pdf, page1 used on input line 38
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: ./appendices/pretest3.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest3.pdf, page 1>
-Package pdftex.def Info: ./appendices/pretest3.pdf, page1 used on input line 38
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: ./appendices/pretest3.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest3.pdf, page 1>
-Package pdftex.def Info: ./appendices/pretest3.pdf, page1 used on input line 38
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [95 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/pretest3.pdf>]
-<./appendices/pretest3.pdf, id=1560, page=2, 597.55246pt x 845.07718pt>
-File: ./appendices/pretest3.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest3.pdf, page 2>
-Package pdftex.def Info: ./appendices/pretest3.pdf, page2 used on input line 38
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: ./appendices/pretest3.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest3.pdf, page 2>
-Package pdftex.def Info: ./appendices/pretest3.pdf, page2 used on input line 38
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: ./appendices/pretest3.pdf Graphic file (type pdf)
-
-<use ./appendices/pretest3.pdf, page 2>
-Package pdftex.def Info: ./appendices/pretest3.pdf, page2 used on input line 38
-.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [96 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/pretest3.pdf>]
-<./appendices/Appendix6.pdf, id=1566, 845.1575pt x 1195.46625pt>
-File: ./appendices/Appendix6.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix6.pdf>
-Package pdftex.def Info: ./appendices/Appendix6.pdf used on input line 48.
-(pdftex.def)             Requested size: 845.15544pt x 1195.46333pt.
-File: ./appendices/Appendix6.pdf Graphic file (type pdf)
- <use ./appendices/Appendix6.pdf>
-Package pdftex.def Info: ./appendices/Appendix6.pdf used on input line 48.
-(pdftex.def)             Requested size: 845.15544pt x 1195.46333pt.
- [97]
-<./appendices/Appendix6.pdf, id=1573, page=1, 845.1575pt x 1195.46625pt>
-File: ./appendices/Appendix6.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix6.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix6.pdf, page1 used on input line 4
-8.
-(pdftex.def)             Requested size: 845.15544pt x 1195.46333pt.
-File: ./appendices/Appendix6.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix6.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix6.pdf, page1 used on input line 4
-8.
-(pdftex.def)             Requested size: 597.61578pt x 845.32114pt.
-File: ./appendices/Appendix6.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix6.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix6.pdf, page1 used on input line 4
-8.
-(pdftex.def)             Requested size: 597.61578pt x 845.32114pt.
-File: ./appendices/Appendix6.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix6.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix6.pdf, page1 used on input line 4
-8.
-(pdftex.def)             Requested size: 597.61578pt x 845.32114pt.
-File: ./appendices/Appendix6.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix6.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix6.pdf, page1 used on input line 4
-8.
-(pdftex.def)             Requested size: 597.61578pt x 845.32114pt.
- [98 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Appendix6.pdf>]
-<./appendices/Appendix7.pdf, id=1599, 597.23125pt x 845.1575pt>
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf>
-Package pdftex.def Info: ./appendices/Appendix7.pdf used on input line 53.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
- <use ./appendices/Appendix7.pdf>
-Package pdftex.def Info: ./appendices/Appendix7.pdf used on input line 53.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
- [99]
-<./appendices/Appendix7.pdf, id=1607, page=1, 597.23125pt x 845.1575pt>
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page1 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page1 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page1 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page1 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 1>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page1 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [100 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Appendix7.pdf>]
-<./appendices/Appendix7.pdf, id=1643, page=2, 597.23125pt x 845.1575pt>
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 2>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page2 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 2>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page2 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 2>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page2 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [101 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Appendix7.pdf>]
-<./appendices/Appendix7.pdf, id=1648, page=3, 597.23125pt x 845.1575pt>
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 3>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page3 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 3>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page3 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 3>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page3 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [102 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Appendix7.pdf>]
-<./appendices/Appendix7.pdf, id=1653, page=4, 597.23125pt x 845.1575pt>
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 4>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page4 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 4>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page4 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-File: ./appendices/Appendix7.pdf Graphic file (type pdf)
-
-<use ./appendices/Appendix7.pdf, page 4>
-Package pdftex.def Info: ./appendices/Appendix7.pdf, page4 used on input line 5
-3.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [103 <C:/Users/Stefan/Documents/GitHub/med4Report/appendices/Appendix7.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
-
-(C:\Users\Stefan\Documents\GitHub\med4Report\main.aux
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\readersguide.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\glossary.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\introduction.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\pre_analysis.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\analysis.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\lor.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\design.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\implementation.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\evaluation.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\discussion.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\chapters\conclusion.aux)
-(C:\Users\Stefan\Documents\GitHub\med4Report\appendices\appendice.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
+ (C:\Users\Stefan\Documents\GitHub\latex-report-template\main.aux
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\readersguide.a
+ux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\glossary.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\introduction.a
+ux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\pre_analysis.a
+ux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\analysis.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\lor.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\methods.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\design.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\implementation
+.aux)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\evaluation.aux
+) (C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\redesign.aux
+)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\discussion.aux
+)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\chapters\conclusion.aux
+)
+(C:\Users\Stefan\Documents\GitHub\latex-report-template\appendices\appendice.au
+x))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 062E4A2D47CA7E15B31C8034C860B25F;2646.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 3C9CAF499089EC4EB68B423A8BA94EBD;925.
 Package logreq Info: Writing requests to 'main.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 18228 strings out of 495352
- 289711 string characters out of 3182725
- 848969 words of memory out of 3000000
- 20676 multiletter control sequences out of 15000+200000
- 69880 words of font info for 62 fonts, out of 3000000 for 9000
+ 16773 strings out of 495352
+ 266571 string characters out of 3182725
+ 771317 words of memory out of 3000000
+ 19558 multiletter control sequences out of 15000+200000
+ 46239 words of font info for 45 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,18n,45p,1367b,1897s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/
-MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files (x86)/MiKTeX 2.9/font
-s/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx
-12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/public/lm/lmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (107 pages, 7785149 bytes).
+ 41i,11n,58p,930b,1908s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lm
+r17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb>
+Output written on main.pdf (15 pages, 179652 bytes).
 PDF statistics:
- 1770 PDF objects out of 2073 (max. 8388607)
- 307 named destinations out of 1000 (max. 500000)
- 727 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
