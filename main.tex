@@ -1,0 +1,148 @@
+%------------------------------------------------------------------------------
+% PREAMBLE
+%------------------------------------------------------------------------------
+\documentclass[11pt]{article}
+
+% Default margins are too wide all the way around. I reset them here.
+% Set paper size and twoside.
+\usepackage[a4paper,
+            twoside,
+            left=1.5in,
+            right=1.0in,
+            textheight=9in, 
+            headheight=14pt]{geometry}
+            
+% Packages
+% Locale settings
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % font
+\usepackage[danish,english]{babel}
+\usepackage{setspace} % text spacing
+
+% We want clickable links in the pdf. Hide borders.
+\usepackage[pdfborder={0 0 0}]{hyperref} 
+
+% Dummy text
+\usepackage{lipsum}
+
+% Math enhancements
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% Cool stuff with quotes
+\usepackage{csquotes}
+
+% Images
+\usepackage{graphicx}
+\usepackage{subfigure} % Allows more images in same float
+\graphicspath{{images/}}
+
+% Color highlighting
+\usepackage[usenames,dvipsnames,table]{xcolor}
+
+% ...appendix
+\usepackage{appendix}
+\usepackage[final]{pdfpages}
+
+% Biblatex! 
+\usepackage[backend=biber, style=ieee]{biblatex}
+\addbibresource{bib.bib}
+% \DeclareLanguageMapping{english}{english-apa} % Only needed for apa style
+
+% For algorithms ans pseudo-code
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% Styles
+\usepackage{fancyhdr} % Cool headers 
+\usepackage[labelfont=bf]{caption} % Bold labels for float captions
+
+% Code blocks
+\usepackage{listings}
+
+% Float management and float barrier 
+\usepackage[section]{placeins}
+
+% Space between paragraphs based on locale. Much cleaner then \bigskip.
+\usepackage{parskip}
+
+
+% Commands
+% Allows for linebreak in table cells. 
+% \specialcell{line one \\ line two}
+\newcommand{\specialcell}[2][c]{%
+    \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+
+
+% Title data
+\author{Group Number}
+\title{Report Template}
+\date{\today}
+
+% Only include these chapters. For when you only work on one chapter
+%\includeonly{./chapters/introduction} 
+
+
+\begin{document}
+
+%------------------------------------------------------------------------------
+% TOP MATTER
+%------------------------------------------------------------------------------
+\fancyhf{} % Reset all pagestyles 
+\pagestyle{plain} % Load plain pagestyle 
+\pagenumbering{roman} % Roman pagenumbering for top matter 
+
+\include{./chapters/readersguide}
+\include{./chapters/glossary}
+
+\maketitle
+
+\setcounter{tocdepth}{2} % Do not include subsubsections in toc
+\tableofcontents
+
+\clearpage 
+%------------------------------------------------------------------------------
+% MAINMATTER
+%------------------------------------------------------------------------------
+\setstretch{1.3} % Linespacing
+\pagestyle{fancy}
+
+% Used for section name in page header.
+% Reset by \pagestyle{} so define here.
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}} 
+\fancyhead[RE, LO]{Chapter \thesection . \emph{\nouppercase{\leftmark}}}
+\fancyhead[RO, LE]{\thepage}
+\pagenumbering{arabic} % Bact to normal page numbering. Resets counter
+
+\include{./chapters/introduction}
+\include{./chapters/pre_analysis}
+\include{./chapters/analysis}
+\include{./chapters/lor}
+% \include{./chapters/methods}
+\include{./chapters/design}
+\include{./chapters/implementation}
+\include{./chapters/evaluation}
+% \include{./chapters/redesign}
+\include{./chapters/discussion}
+\include{./chapters/conclusion}
+
+\clearpage
+%------------------------------------------------------------------------------
+% BIBLIOGRAPHY
+%------------------------------------------------------------------------------
+\pagestyle{plain}
+\label{bibliography}
+\printbibliography[heading=bibintoc]
+
+\clearpage
+%------------------------------------------------------------------------------
+% APPENDICES
+%------------------------------------------------------------------------------
+% once appendices are started we can't go back
+% make sure this is the last include!!!
+
+\include{./appendices/appendice}
+
+\end{document}
