@@ -24,3 +24,5 @@
 *.run.xml
 *.bcf
 *.pdf
+*.fdb_latexmk
+*.fls
