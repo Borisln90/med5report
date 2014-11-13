@@ -2,16 +2,29 @@
 \BOOKMARK [1][-]{section.2}{Investigation}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Initial Problem Statement}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Artificial Intelligence}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Adaptive difficulty}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Game selection}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.5}{Final Problem Statement}{section.2}% 7
-\BOOKMARK [1][-]{section.3}{Analysis}{}% 8
-\BOOKMARK [1][-]{section.4}{List of Requirements}{}% 9
-\BOOKMARK [1][-]{section.5}{Methods}{}% 10
-\BOOKMARK [1][-]{section.6}{Design}{}% 11
-\BOOKMARK [1][-]{section.7}{Implementation}{}% 12
-\BOOKMARK [1][-]{section.8}{Evaluation}{}% 13
-\BOOKMARK [1][-]{section.9}{Re-design}{}% 14
-\BOOKMARK [1][-]{section.10}{Discussion}{}% 15
-\BOOKMARK [1][-]{section.11}{Conclusion}{}% 16
-\BOOKMARK [1][-]{section.12}{Appendices}{}% 17
+\BOOKMARK [2][-]{subsection.2.3}{What is AI}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Identify exiting types of AI}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Genetic algorithm}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.6}{Game Selection Research}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.7}{Final Problem Statement}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{Analysis}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Pacman}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{Mechanics/Game parameters}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.3}{Pre existing AI in Pacman}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.4}{Pacman difficulty}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.5}{Pacman software}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.6}{Dynamic Game Difficulty Balancing}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.7}{Flow}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.8}{What did others do?}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.9}{Adaptive Difficulty}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.10}{Genetic algorithm}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.11}{Genetic algorithm: Technical and theorical implementation}{section.3}% 21
+\BOOKMARK [1][-]{section.4}{List of Requirements}{}% 22
+\BOOKMARK [1][-]{section.5}{Methods}{}% 23
+\BOOKMARK [1][-]{section.6}{Design}{}% 24
+\BOOKMARK [1][-]{section.7}{Implementation}{}% 25
+\BOOKMARK [1][-]{section.8}{Evaluation}{}% 26
+\BOOKMARK [1][-]{section.9}{Re-design}{}% 27
+\BOOKMARK [1][-]{section.10}{Discussion}{}% 28
+\BOOKMARK [1][-]{section.11}{Conclusion}{}% 29
+\BOOKMARK [1][-]{section.12}{Appendices}{}% 30
