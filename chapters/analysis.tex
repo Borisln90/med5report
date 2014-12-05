@@ -30,7 +30,10 @@ A Genetic Algorithm consists of at least five components as described by Baltzer
 \begin{itemize}
 \item \textbf{Chromosome / gene representation}
 
-The chromosomes in the Genetic Algorithm functions as the sets of solutions. Each chromosome represents a solution. A solution is composed of genes, which are variables within a single chromosome. The population of individuals can be described as the representation of the combined solutions(chromosomes). A visual representation can be seen on figure \ref{fig:gene}.
+A representation of a population and the subordinate content, being chromosomes and genes can seen on figure \ref{fig:gene}.
+The genes functions as a string of some arbitrary length. A chromosome is a sequence of genes, whereof the combined chromosomes serves as the population. \cite[pp. 41]{Sivanandam2008} 
+
+
 \begin{figure}
 \centering
 \includegraphics[scale=1.0]{gene_chromosomes.jpg}
@@ -39,7 +42,18 @@ The chromosomes in the Genetic Algorithm functions as the sets of solutions. Eac
 \end{figure}
 
 \item \textbf{Initialisation of the population}
+
+When some representation of a chromosome is developed, an initial population must be created as a starting point for the algorithm. This representation of a population is chosen randomly, as there are no prior evident solutions.
+
+
 \item \textbf{evaluation function(fitness)}
+
+In order to improve further generations, the fitness of each chromosome in the current population must be evaluated.
+
+The Genetic Algorithm assign scores to each chromosome in the population, and these scores can be interpreted as the fitness score. In general manners, the fitness of a given chromosome is dependant on how successively the given chromosome solved the designated problem. \cite[pp. 8]{Melanie1990}
+
+According to Sivanandam and Deepa, 2008 \cite{Sivanandam2008} the fitness
+
 \item \textbf{Genetic operators altering chromosomes(reproduction/selection, crossover and mutation.}
 \item \textbf{Parameters for population size and probabilities of genetic operators.}
 \end{itemize}
