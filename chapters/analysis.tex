@@ -23,7 +23,7 @@ Genetic algorithms was invented by John Holland in 1975 and is proposed as a heu
 
 The Genetic Algorithm start with a set of plausible solutions and by the use of genetic operator alterations like reproduction, crossovers and mutations \cite{Baltzer2014}, it develops a new set of better solutions compared to the previous. By repeating this process, a population will theoretically improve until a satisfying result is found to the given problem. \cite{BCS2013}
 
-What is noteworthy about "satisfying results" is that we search for some better solution within a set of possible solutions, also referred to as search space. It is therefore not guaranteed to find some, if any, optimal solution to the problem but rather a solution which can be interpreted as acceptably good. \cite[pp. 20/21]{Sivanandam2008}
+What is noteworthy about "satisfying results" is that we search for some better solution within a set of possible solutions, also referred to as search space. It is therefore not guaranteed to find some, if any, optimal solution to the problem but rather a/some solution(s) which can be interpreted as acceptably good. \cite[pp. 20/21]{Sivanandam2008}
 
 
 In genetic algorithms, populations and individuals covers the terminology of the solutions and searches thereof. A individual is to be considered a single solution to the problem and the population is the number of individuals involved. \cite[pp. 39]{Sivanandam2008} 
@@ -49,11 +49,20 @@ As mentioned above, each individual(chromosome) is a single solution to the prob
 \label{fig:gene}
 \end{figure}
 
+The chromosomes which contains an array of genes is an abstract representation of data. Thus the chromosomes and genes must be encoded in some way, dependent on the problem. There are several ways that chromosomes can be encoded. Some of the encoding methods are listed by Obitko, 1998 \cite{Marek1998}
+
+The types of encoding data range from strings of values, binary data, object trees and  number sequences.
+
+
 \item \textbf{Initialisation of the population}
 
 A population is a collection of individuals(chromosomes).  
 
+
+
 An initial population must be created as a starting point for the algorithm. This representation of a population is chosen randomly, as there might be no prior evident solutions. Dependent on the stated problem at hand, the initialization of populations might also be carried out with some good solutions to the problem. However in most cases, the initial population is chosen at random. \cite[pp. 41/42]{Sivanandam2008}
+
+
 
 
 
@@ -164,11 +173,16 @@ It is described that population size very much depend on encoding and size of th
 
 \subsubsection{Genetic algorithm procedure}
 
+
 Now that the general usage, definition and components has been described, a short general description of the procedure as to implementation and functionality of a general algorithm can be defined.
 
 Each iteration of the genetic algorithm process is defined as a generation. The entire set of generations is defined as a run. \cite[pp. 9]{Melanie1990}
 
-A general genetic algorithm is here defined algorithmically by Malhotra et.al, 2011 \cite[pp. 40]{Rahul2011}
+
+
+
+
+A general genetic algorithm is here defined algorithmically by Malhotra et.al, 2011 \cite[pp. 40]{Rahul2011}, much similar is that of Sivanandam, 2008 \cite[pp. 30-31]{Sivanandam2008}
 \enquote{
 \begin{description}
 \item[Start:] Generate population of chromosomes.
