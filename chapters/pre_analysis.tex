@@ -5,86 +5,11 @@ This chapter will provide an overview of Artificial Intelligence were it set foc
 \subsection{Initial Problem Statement} \label{sec:initialproblemstatement}
 Is it possible to create an artificial intelligence opponent in Pacman, which modifies itself according to the players' performance?
 
-
-\subsection{Artificial Intelligence} \label{sec:ai}
-Artificial Intelligence (AI) has been, and is still one of the absolute big buzzword in the science industry.
-The idea of giving a machine, human characteristics have been around for centuries and is still a field that demands a lot of attention, nevertheless is successful, and have therefor become a constantly growing field for each time it is proven possible.
-One field with great succes is the gaming industry, who have found AI as a good entertainment source in commercial games when developing a NPC opponent. More recently have AI also found its way in educational application that trains medical and military students in possible real life high-risk situations. Here the students answer will reflect and change the rest of their situation either for the better or worse.
-
-As the name Artificial Intelligence implies can the term AI have several meanings. It may refer to different areas of specialization such as games playing, expert systems, natural language, neural networks and robotics.
-Therefor whenever we further use the term AI in this report, are we referring to the idea of incorporating a game opponent (NPC) as opposed to a mechanical AI.
-
-
-
-\subsubsection{Definition of AI}
-
-Although numerous definitions already exist, would we still like define what we consider an AI. The main definiton will be defined thus:
-
- 		AI builds on the idea of creating an intelligent computational component with human like artifacts 			reacting and thinking like a human, that should process as a self-operating machine that response to 		tasks.
-
-When trying to define AI we would like to break the word up in its two former arguments, Artificial and Intelligence.
-We have adopted the official definition of Artificial, which state artificial is not necessarily associated with computers and technology. It just means something biological has been made by humans, imitated a natural origin and produced a copy of it.
-In gaming AI are we considering artificial an imitation of the human brain. The brain is the main component because this is were humans store personality, self-awareness and control self-operating actions, which is what scientist would like to modernize to mechanics.
-Keep in mind that we do not see self-operating as the same as self-awareness since a gameplay should not possess this action. Gameplays is perceived as a form of entertainment and should therefor not be aware of anything beyond the scope. The purpose of the AI is to simulate a intelligent behavior that gives the opponent a believable challenge that can be overcome.
-
-But what is intelligent behavior? Intelligence is hard to define since it does not have a solid definition that can characterize what kinds of computational procedures we want to call intelligent.
-Therefor in our case is intelligence defined as the ability to achieve fixed goals out from several observations.
-It should base its observation out from the trial and error method, trying out random moves until one is found succesful and store that information until next time the AI is placed in same problem. If that happens should the AI remember the problem from earlier and produce the successful answer immediately.
-
-All this put together is what we call an intelligent Agent (IA).
-
-"An agent is anything that is capable of acting upon information it perceives. An intelligent agent is an agent capable of making decisions about how it acts based on experience. An autonomous intelligent agent is an intelligent agent that is free to choose between different actions. "
-
-So for further reading will we refer our AI algorithm as an Agent.
-
-
-\subsubsection{General types of AI's in games}
-
-Seek
-Pursue
-Flee
-Evade
-Arrival
-Wander
-Flock
-Obstacle Avodiance
-Path Follow
-
-
-
-
-
-
-\subsubsection{Self-Modifying AI's in games}
-
+\input{pre_analysis/ai.tex}
 
 \subsection{Artificial Intelligence in Pacman(SOTA)}
+\input{pre_analysis/ai_behavior_sota.tex}
 
-\subsubsection{Original AI behaviour}
-The four enemies in Pac-Man may appear to move in a random fashion but each of the four ghosts actually move in a deterministic fashion.The enemies each have a specific character and goal. They all share the same behavior modes that they can switch between; \textbf{Chase}, \textbf{scatter}, and \textbf{frightened}.
-
-\emph{Chase mode} is, in all its simplicity, about chasing the Pac-Man down through the maze.
-
-In \emph{scatter mode}, the ghosts forgets the Pac-Man and heads to their corner of the maze. This mode is only be active for a few seconds before they revert to chase mode.
-
-When the Pac-Man eats one of the four special pellets in the maze, the ghosts go into \emph{frightened mode}. In Frightened mode, the ghosts will turn dark blue, turn around and aimlessly wander the maze for a few seconds before they return to their previous mode. In frightened mode the ghosts become vulnerable (indicated by the dark blue color) and it is possible for the Pac-Man to eat the ghosts for extra points. When a ghost is eaten it will return to the box in the middle of the maze as well as resume its previous mode.
-
-The effects of frightened mode is different depending on how far in the game the player is; as the levels progress the time spend in fright mode is shortened until they no longer become frightened (They still lose their target and wander aimlessly).
-
-
-Even though the ghosts all share the same modes, the implementation of specifically chase mode is different for each ghost.
-
-\subsubsection*{The red ghost (Blinky)}
-The red ghost is the most aggressive of the four ghosts, and is described as the shadow. His chase mode uses Pac-Mans current tile as the target tile, which makes him difficult to shake off when he is close. Also implemented is “Cruise Elroy” mode. Twice each round, Blinky will turn into Elroy. This is determined by the number of pellets left in the maze. When Blinky turns into Elroy, he will become faster; first time as fast as the Pac-Man, and the second time he will be faster. His scatter mode is also changed when in Elroy mode, instead of wandering the maze aimlessly, he will continue to chase the Pac-Man. He will turn around and leave the Pac-Man until an intersection is reached.
-
-\subsubsection*{The pink ghost (Pinky)}
-When in chase mode, Pinky will not use the Pac-Mans current tile as the target, instead his target is four tiles in front of the Pac-Man. His mission is therefore to cut the Pac-Man off and box him in. Interestingly when the Pac-Man is walking to the top of the maze, Pinkys target changes from four tiles ahead to four ahead \textit{and} four to the left. This is because of a bug in the code that was not fixed.
-
-\subsubsection*{The blue ghost (Inky)}
-Inky can be seen as one of the more dangerous of the four. Instead of having just one targeting scheme, he seems to switch between the schemes of his comrades, sometimes chasing, sometimes blocking off or even wandering effortlessly. As with Pinky, Inky also uses an offset tile two tiles in front of Pac-Man. Inky also uses Blinkys position in regards to the Pac-Man to determine his target tile. This has the effect that Inky will be close to the Pac-Man whenever Blinky is close to the Pac-Man and vice-versa.
-
-\subsubsection*{The orange ghost (Clyde)}
-Clyde seems to stay away from the Pac-Man and do his own thing. He uses the distance to the Pac-Man to determine his target tile. If he is far from the Pac-Man he will go into chase mode just as Blinky would. When he comes within eight tiles of the Pac-Man he will turn around and go into scatter mode. While Clyde will never reach the Pac-Man on his own, he can still be dangerous if the Pac-Man gets in his way for instance during scatter mode.
 
 \subsubsection{Self-modifying AI's in Pacman / Ms. Pacman}
 
