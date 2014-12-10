@@ -1,3 +1,5 @@
+%!TEX root = ../main.tex
+
 \section{Investigation} \label{sec:preanalysus}
 This chapter will provide an overview of Artificial Intelligence were it set focus on Artificial intelligence non-player characters (NPC) in games. It will describe the general behaviors and self-modifying Artificial Intelligence there exits, in order to compare it to the original arcade game Pacman (1980).
 
@@ -5,13 +7,11 @@ This chapter will provide an overview of Artificial Intelligence were it set foc
 \subsection{Initial Problem Statement} \label{sec:initialproblemstatement}
 Is it possible to create an artificial intelligence opponent in Pacman, which modifies itself according to the players' performance?
 
-\input{pre_analysis/ai.tex}
+\input{chapters/pre_analysis/ai.tex}
 
 \subsection{Artificial Intelligence in Pacman(SOTA)}
-\input{pre_analysis/ai_behavior_sota.tex}
-
-
-\subsubsection{Self-modifying AI's in Pacman / Ms. Pacman}
+\input{chapters/pre_analysis/ai_behavior_sota.tex}
+\input{chapters/pre_analysis/self_modifying_sota.tex}
 
 \subsection{Summary}
 We identify that GA’s had indeed been implemented in Pacman in several manners, both where Pacman and the ghosts have altered behaviours. However, we find no evident material as to how a GA implementation which self modifies the alternations between the behaviours of the opponent (ghosts) could be successfully implemented. Therefore, we see if this modification is possible, and if it does indeed have some sort of impact on the player’s performance in any plausible way.
