@@ -4,87 +4,89 @@
 
 \subsection{Artificial Intelligence} \label{sec:ai}
 Artificial Intelligence (AI) has been, and is still one of the absolute big buzzword in the science industry.
-The idea of giving a machine, human characteristics have been around for centuries and is still a field that demands a lot of attention, nevertheless is successful, and have therefor become a constantly growing field for each time it is proven possible.
-One field with great succes is the gaming industry, who have found AI as a good entertainment source in commercial games when developing a NPC opponent. More recently have AI also found its way in educational application that trains medical and military students in possible real life high-risk situations. Here the students answer will reflect and change the rest of their situation either for the better or worse.
+The idea of giving a machine, human characteristics have been around for centuries and is still a field that demands a lot of attention, \cite {Buchanan2006} nevertheless is successful, \cite {Franz2014} \cite {Varkey2014} and have therefor become a constantly growing field for each time it is proven possible. \cite {Kilde} 
 
-As the name Artificial Intelligence implies can the term AI have several meanings. It may refer to different areas of specialization such as games playing, expert systems, natural language, neural networks and robotics.
+One field with great success is the gaming industry, who have found AI as a good entertainment source in commercial games when developing a NPC opponent. \cite {kilde}  An NPC is a game character (or several characters) there is not controlled by a person but by the computer. \cite {Definition2014}  For example have a NPC recently been developed to train medical and military students in real life high-risk situations through a educational application. \cite {kilde} 
+
+As the name Artificial Intelligence implies can the term AI have several meanings. It may refer to different areas of specialization such as games playing, expert systems, natural language, neural networks and robotics. \cite {Vangie2014} 
 Therefor whenever we further use the term AI in this report, are we referring to the idea of incorporating a game opponent (NPC) as opposed to a mechanical AI.
 
 
 
 \subsubsection{Definition of AI}
 
-Although numerous definitions already exist, would we still like to define what we consider an AI. The main definiton will be defined thus:
+Although numerous definitions already exist, would we still like to define what we consider an AI. Our general definition will follow the Oxford dictionaries and be defined thus:
 
 		\begin{quote}
-		AI builds on the idea of creating an intelligent computational component with human like artifacts 			reacting and thinking like a human, that should process as a self-operating machine that response to 		tasks.
+		The theory and development of computer systems able to perform tasks normally requiring human 		intelligence, such as visual perception, speech recognition, decision-making, and translation between languages. \cite {Oxford2014} 
 		\end{quote}
 
-When trying to define AI we would like to break the word up in its two former arguments, Artificial and Intelligence.
-We have adopted the official definition of Artificial, which state artificial is not necessarily associated with computers and technology. It just means something biological has been made by humans, imitated a natural origin and produced a copy of it.
-In gaming AI are we considering artificial an imitation of the human brain. The brain is the main component because this is were humans store personality, self-awareness and control self-operating actions, which is what scientist would like to modernize to mechanics.
-Keep in mind that we do not see self-operating as the same as self-awareness since a gameplay should not possess this action. Gameplays is perceived as a form of entertainment and should therefor not be aware of anything beyond the scope. The purpose of the AI is to simulate a intelligent behavior that gives the opponent a believable challenge that can be overcome.
+However as stated earlier will we not investigate fields such as speech recognition, translation or visual perception. Therefore will we further break down the general definition and look at the exact meaning of AI's two former arguments, Artificial and Intelligence.
 
-But what is intelligent behavior? Intelligence is hard to define since it does not have a solid definition that can characterize what kinds of computational procedures we want to call intelligent.
-Therefor in our case is intelligence defined as the ability to achieve fixed goals out from several observations.
+We have adopted the official definition of Artificial, which state artificial is not necessarily associated with computers and technology. \cite {artificial2014} It just means something biological has been made by humans, imitated a natural origin and produced a copy of it.
+
+In gaming AI are we considering artificial an imitation of the human brain. The brain is the main component because this is were humans store personality, self-awareness and control self-operating actions, which is what scientist would like to modernize to mechanics. \cite {something}
+Keep in mind that we do not see self-operating as the same as self-awareness. According to game developer Kehoe, 2009 should a gameplay should not possess this action. \cite {Kehoe2009}Gameplays is perceived as a form of entertainment and should therefor not be aware of anything beyond the scope. The purpose of the AI is to simulate a intelligent behavior that gives the opponent a believable challenge that can be overcome.
+
+But what is intelligent behavior? Intelligence is hard to define since it does not have a solid definition that can characterize what kinds of computational procedures we want to call intelligent.  \cite {McCarthy2007} Therefore in our case is intelligence defined as the ability to achieve fixed goals out from several observations.
 It should base its observation out from the trial and error method, trying out random moves until one is found succesful and store that information until next time the AI is placed in same problem. 
 
 All this put together is what we call an intelligent Agent (IA).
 
-"An agent is anything that is capable of acting upon information it perceives. An intelligent agent is an agent capable of making decisions about how it acts based on experience. An autonomous intelligent agent is an intelligent agent that is free to choose between different actions. "
+"An agent is anything that is capable of acting upon information it perceives. An intelligent agent is an agent capable of making decisions about how it acts based on experience. An autonomous intelligent agent is an intelligent agent that is free to choose between different actions. "  \cite {mills2005} 
 
-So for further reading will we refer our AI algorithm as an Agent.
 
 
 \subsubsection{General types of AI's in games}
 
-Seek,
-Pursue,
-Flee,
-Evade,
-Arrival,
-Wander,
-Flock,
-Obstacle Avodiance,
-Path Follow,
+As we state in our IPS are we researching the possibility in creating an AI that modifies itself according to players' performance. We find that it is not relevant to investigate AI behavior that can not alter itself in a adaptive manner as we are looking for. For this are we not looking further into General AI in games.  
 
 
 \subsubsection{Self-Modifying AI's in games}
 
-While the AI's execute its code, should it be able to change decisions as described in the definition of AI in order to be intelligent. Therefor are we looking into self-modifying algorithms that can alter its own instructions during run time, based on the trial and error method.  
+While the AI's execute its code, should it be able to change decisions as described in the definition of AI in order to be intelligent. Therefor are we looking into self-modifying algorithms that can alter its own instructions during run time, based on the trial and error method.
+
+Complex Adaptive systems is a field that have investigated the options in imitating aspects of biological systems and implement them computational as stated by Holland, 1975. \cite {Holland 1975}. The computation is tasked to solve problems corresponding to the natures way of solving, whereas some of the adaptive systems include:
+
+	\begin{itemize}
+	\item Evolutionary Computation 
+	\item Neural computation 
+	\item Ant-Colony-inspired algorithms 
+	\item Immune-system 
+	\item Computer security 
+	\item Molecular Computing 
+	 \end{itemize}    
+
+
+
+
 
 Evolutionary Computation underlies the idea of survival of the fittest, out from four significant processes. 
 Reproduction, competition, mutation and selection. \cite{Fogel1997} The trial and error method takes basis of these four processes in able to produce succesful answers out from an evolutionary algorithm (EA). 
 
-\begin{quote}
-Reproduction wants to recombine succesful genes there have survival potential, and keep on creating an population thats getting better and better for each offspring. \cite{Fogel1997}
+
+Reproduction wants to recombine succesful genes there have survival potential, and keep on creating an population thats getting better and better for each offspring. \cite{Fogel 1997}
 
 Selection distinguish between the parent and the offsprings quality for survival. It selects either the parent or offspring for being allowed in the next generation, typically done through their ability to solve problems and their age.   \cite{Smith2007}
 
-
-
-Mutation is applied to the parent through input, and will deliver offspring there is slightly modified mutanted. Here the offspring depends on random choices out from a probability distribution.  \cite{Smith2007}
+Mutation is applied to the parent through input, and will deliver offspring there is slightly modified mutanted. Here the offspring depends on random choices out from a probability distribution.  \cite{Smith 2007}
 
 
 Competition occurs when the population is expanding in a limited resource space, and both the parent and offspring has to fight for survival. Here it is the selection process who determine who lives. \cite{Fogel1997}
 
-\end{quote}
 
-A possible algorithm that make use of these four processes are the Genetic Algorithm (GA). The GA make use of the evolutionary algorithm and expand it to an algorithm that controls the best fit solution the EA is supposed to solve. Naturally we want to keep the best surviving solution, while abandoning the rest and this can be done through a fitness score that determinate a rank depending on ther suitability for the problem to be solved. \cite {Sivanandam2008}
 
-Some of its advantages are  
+A possible algorithm that make use of these four processes are the Genetic Algorithm (GA). The GA make use of the evolutionary algorithm and expand it to an algorithm that controls the best fit solution the EA is supposed to solve. Naturally we want to keep the best surviving solution, while abandoning the rest and this can be done through a fitness score that determinate a rank depending on ther suitability for the problem to be solved. \cite {Sivanandam 2008}
 
-Disadvantages  
-
-8
-3 flere solutions 
-
-8
-3 flere solutions 
+According to a list created by Deepa, 2008 can it both have advantages and disadvantages when using a GA in games. 
+For example does "a GA have a wider solution space" (depending on the resources), that can differ accordingly to how many branches the parent have created. This means there can be several solutions the GA can pick from and choose the best fit option it finds succesful. 
+A second advantage is "it can easily be modified for different problems" because it can make use of the mutation process. 
+Nevertheless is the GA not total problem free and have some disadvantages as well. "There might be problems in identifying the fitness score," and "defining the problem that needs to be solved." 
 
 
 
 were it been used 
+
 
 
 
