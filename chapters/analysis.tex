@@ -8,13 +8,63 @@
 \subsubsection{AI behaviour argumentation (how they do it)}
 \subsubsection{Technical details/mechanics/paramters}
 
-\subsection{Player performance}
-a. Identify pacman parameters to measure player performance. (from 4.B) Associate also with  previous research(other AI implementations in Pacman. What did they use to  identify “performance”?
+\textbf{About}\\
+Pacman is an arcade game which was developed by the company Namco, and was first released in 1980's.
+
+Extensive documentation and description of Pacman has been accounted for by Pittmann, 2011 \cite{Pittman2011}.
+
+\textbf{Purpose}
+The general purpose of the game is to control Pacman through a maze while gathering dots. Once all the dots within the maze has been collected by Pacman, the player proceeds to the next level. There are 255 levels in total.\\
+
+While trying to proceed to the next level by collecting dots, there are also several other incorporated features.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.5]{pacman_level.png}
+\caption{Pacman level screenshot: \cite{Pittman2011} }
+\label{fig:Pacman}
+\end{figure}
 
 
-b. Define “good” and “bad” performance based upon 5a. (assume that we use only win/lose conditions unless prior research has based performance indications upon other game parameter results)
+On figure \ref{fig:Pacman}, the setup for a level is displayed. The following elements in the game, within a single level, are the following:
 
-c. Performance results. We identify “some” performance. Therefore we configure the following “alternation of ghost behavior” in “this” way.
+\begin{itemize}
+\item maze\\
+The maze is the area of which the Pacman and ghosts navigates around throughout a level. There exists many different mazes which depends on the version of Pacman.
+\item Pacman\\
+Pacman is the playing agent that is navigated throughout the levels by moving up, down, left and right.
+\item Ghosts\\
+The ghosts, as seen on figure \ref{fig:Pacman}, is Blinky, Pinky, Inky and Clyde. They emerge from the center of the maze and chases the Pacman throughout the level, each using unique behaviours to catch him. Description of the ghost behaviours can be found in section XX.
+\item dots and energizers\\
+The dots within the maze functions as the foundation for winning a level in Pacman. Once all the dots are picked up/eaten by Pacman, the level is won.\\
+The dots does however also grant points to the player.\\
+Each dot is worth 10 points. In the original game, as stated by Pittman, 2011 \cite{Pittman2011}, there are 240 dots in total which amounts to 2400 points.
+
+Energizers, which can be seen on figure \ref{fig:Pacman} as 4 bigger dots placed in each corner of the maze also grants points. 50 points each.
+In combination, the total amount of points acquired by dots and energizers are  2600. The energizers does however also alter the state of the ghosts into a mode of which it is possible for the Pacman to eat the ghosts and thereby also acquiring points for a limited amount of time.\\
+While the ghosts remain in the state of "fleeing" caused by the Pacman eating the energizer, each consecutive eaten ghost will result in twice as many points as the previus eaten ghost, whereof the first ghost gains the player 200 points.\\
+If the player succesfully eats all four ghosts wile the "fleeing" state is active, the player acquire a total of 3000 points.\\
+
+If all ghosts are consumed under the "fleeing" state of each energizer, in combination with the points from the gathered dots the combined score is 14600.
+\item fruits\\
+The fruits in Pacman are bonus elements that appear in the maze at certain times through a level which also adds points to the player, if collected. The fruit appears twice in each level and spawns when a certain amount of dots has been eaten.
+The amount of points gained from the fruits range from anything from 100 to 5000 points, depending on the type of fruit that spawns. Also worth mentioning is that the fruit dissapear after a certain amount of time if not consumed in time.
+\end{itemize}
+
+
+\subsection{Player performance(PP)}
+
+As described in the final problem statement, we try to implement a genetic algorithm that corresponds to the players' performance in Pacman.\\
+
+To clarify, the player performance is not to be compared with the percieved difficulty of the game, and how it correlates to the players' skill.\\ Engeser, 2008 \cite{Engeser2008} discuss the aspects of flow, which is described as a balance of challenge of the game, and skill of the player. It is the state of which, the player feels challenged while also having confidence in keeping everything under control. \cite[pp. 158]{Engester2008}\\
+This terminology must not be compared with our definition of player performance.\\
+
+The aim of identifying player performace, is to focus on the specific game parameters, mechanics and functionalities within Pacman to access the performance of the player. We observe elements within the game, which might imply some indications as to how the player is performing.\\
+
+
+\subsubsection{performance indicating mechanics}
+
+
 
 \subsection{Genetic Algorithm(s)}
 
