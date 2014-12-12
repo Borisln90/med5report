@@ -1,3 +1,5 @@
+%!TEX root = ../main.tex
+
 \section{Analysis} \label{sec:analysis}
 
 
@@ -56,7 +58,7 @@ The amount of points gained from the fruits range from anything from 100 to 5000
 
 As described in the final problem statement, we try to implement a genetic algorithm that corresponds to the players' performance in Pacman.\\
 
-To clarify, the player performance is not to be compared with the percieved difficulty of the game, and how it correlates to the players' skill.\\ Engeser, 2008 \cite{Engeser2008} discuss the aspects of flow, which is described as a balance of challenge of the game, and skill of the player. It is the state of which, the player feels challenged while also having confidence in keeping everything under control. \cite[pp. 158]{Engester2008}\\
+To clarify, the player performance is not to be compared with the percieved difficulty of the game, and how it correlates to the players' skill.\\ Engeser, 2008 \cite{Engeser2008} discuss the aspects of flow, which is described as a balance of challenge of the game, and skill of the player. It is the state of which, the player feels challenged while also having confidence in keeping everything under control. \cite[pp. 158]{Engeser2008}\\
 This terminology must not be compared with our definition of player performance.\\
 
 The aim of identifying player performace, is to focus on the specific game parameters, mechanics and functionalities within Pacman to access the performance of the player. We observe elements within the game, which might imply some indications as to how the player is performing.\\
@@ -76,7 +78,7 @@ The Genetic Algorithm start with a set of plausible solutions and by the use of 
 What is noteworthy about "satisfying results" is that we search for some better solution within a set of possible solutions, also referred to as search space. It is therefore not guaranteed to find some, if any, optimal solution to the problem but rather a/some solution(s) which can be interpreted as acceptably good. \cite[pp. 20/21]{Sivanandam2008}
 
 
-In genetic algorithms, populations and individuals covers the terminology of the solutions and searches thereof. A individual is to be considered a single solution to the problem and the population is the number of individuals involved. \cite[pp. 39]{Sivanandam2008} 
+In genetic algorithms, populations and individuals covers the terminology of the solutions and searches thereof. A individual is to be considered a single solution to the problem and the population is the number of individuals involved. \cite[pp. 39]{Sivanandam2008}
 
 
 
@@ -87,10 +89,10 @@ A Genetic Algorithm consists of at least five components as described by Baltzer
 \item \textbf{Chromosome / gene representation}
 
 A representation of a population and the subordinate content, being chromosomes and genes as seen on figure \ref{fig:gene}.
-The genes functions as a string of some arbitrary length of data. A chromosome is a sequence of genes, whereof the combined chromosomes serves as the population. \cite[pp. 41]{Sivanandam2008} 
+The genes functions as a string of some arbitrary length of data. A chromosome is a sequence of genes, whereof the combined chromosomes serves as the population. \cite[pp. 41]{Sivanandam2008}
 
 As mentioned above, each individual(chromosome) is a single solution to the problem at hand. The chromosomes can be considered to be \enquote{a point in the search space of candidate solutions} \cite[pp. 7]{Melanie1990} Melanie, 1990.
-	
+
 
 \begin{figure}[!h]
 \centering
@@ -115,7 +117,7 @@ The types of encoding methods are as follows:
 
 \item \textbf{Initialisation of the population}
 
-A population is a collection of individuals(chromosomes).  
+A population is a collection of individuals(chromosomes).
 
 
 
@@ -143,7 +145,7 @@ Genetic operators in some of the more simple Genetic Algorithms are reproduction
 \textbf{reproduction/selection:} \enquote{This operator selects chromosomes in the population for reproduction. The fitter the chromosome, the more times it is likely to be selected to reproduce.} \cite[pp. 8]{Melanie1990}
 The idea behind this operator is that preferences are given to the better chromosomes in the population, which is then passed on to the next generation. This is based upon the fitness score.
 
-Within the selection operator, several selection methods exists which defines how the actual selection of "best" individuals is to be conducted. 
+Within the selection operator, several selection methods exists which defines how the actual selection of "best" individuals is to be conducted.
 
 Some of the selection methods are:
 \begin{itemize}
@@ -183,7 +185,7 @@ The crossover method takes two parent solutions(chromosomes) to create new indiv
 \end{itemize}
 The list is from Sivanandam, 2008 \cite[pp. 50-56]{Sivanandam2008}
 
-Similarly with the list of selection operators, we will not account for the crossover operator methods, but will be accessed in the design chapter with similar procedures and content. 
+Similarly with the list of selection operators, we will not account for the crossover operator methods, but will be accessed in the design chapter with similar procedures and content.
 
 Additionally with the crossover operator, we can describe the crossover probability.
 The crossover probability is a parameter that describes the likelihood of crossover. It basically states how often that the crossover method will be performed.\cite[pp. 56]{Sivanandam2008}
@@ -249,7 +251,7 @@ A general genetic algorithm is here defined algorithmically by Malhotra et.al, 2
 \item[New Population:] Create new population of solutions by repeating the following steps until the new population is created.
 \begin{description}
 \item[a:] Select parent chromosomes based upon the fitness score.
-\item[b:] Use the crossover operator on the parents to form new children. 
+\item[b:] Use the crossover operator on the parents to form new children.
 \item[c:] Use the mutation operator to mutate the chrildren.
 \item[d:] Place the children into the new population.
 \end{description}
