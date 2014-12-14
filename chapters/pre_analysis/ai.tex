@@ -29,9 +29,13 @@ This means that the key part of an artificial inteligence for use in games is th
 
 \subsubsection{Self-Modifying AI's in games}
 
-While the AI's execute its code, should it be able to change decisions as described in the definition of AI in order to be intelligent. Therefor are we looking into self-modifying algorithms that can alter its own instructions during run time, based on the trial and error method.
+In order to establish knowledge as to what type of artificial intelligence can be modified, and how, the term of "self modifiable" artificial intelligence must be elaborated. We must therefore find examples and pre-existing theories of AI systems in games that is able to alter it's predefined set of behaviours through some adaptive algorithms as a sort of self modification.
 
-Complex Adaptive systems is a field that have investigated the options in imitating aspects of biological systems and implement them computational as stated by Holland, 1975. \cite {Holland1975}. The computation is tasked to solve problems corresponding to the natures way of solving, whereas some of the adaptive systems include:
+As described by Booker et al, 2005 \cite{Booker2005} in a revised perspective of the work on adaptations in natural and artificial systems conducted by John Holland, it is defined that systems that utilizes behaviours such as learning or adaptation is known as complex adaptive systems(CAS).\cite[pp. 1]{Booker2005}
+
+It is mentioned that such systems is able to change behaviours in response to the surrounding environment while also being capable of changing the rules that actually controls it's own behaviour through learning.
+
+Complex adaptive systems, as described by Booker et al, is a growing subject of research within the field of biological inspired computing\cite{Booker2005} . Systems imitate some CAS in nature in order to solve computational problems, which is the process of conducting calculations through computer technology. They describe the following examples of biological computing aspects to be of interest within the development of CAS:
 
 	\begin{itemize}
 	\item Evolutionary Computation
@@ -42,34 +46,49 @@ Complex Adaptive systems is a field that have investigated the options in imitat
 	\item Molecular Computing
 	 \end{itemize}
 
+Lansing, 2003 \cite{Lansing2003} validates that CAS are research within the fields of social sciences along with natural sciences.  The following aspects of the mentioned CAS are however only of relevance if the mentioned examples are somewhat applicable, in any way, to artificial intelligence aspects in games.\\
+Of great interest and relevance lies the aspects and usability of evolutionary computation. Evolutionary computation is the method of constructing problem solving systems, which does so by the use of computational evolutionary models.\cite{Howe2010} Amongst the plausible models of evolutionary computation lies evolutionary algorithms, genetic algorithms, evolution strategies, evolutionary programming and artificial life\cite{Howe2010}\\
 
-Evolutionary Computation underlies the idea of survival of the fittest, out from four significant processes.
-Reproduction, competition, mutation and selection. \cite{Fogel1997} The trial and error method takes basis of these four processes in able to produce succesful answers out from an evolutionary algorithm (EA).
+Lucas and Kendall, 2006 \cite{Lucas2006} describes how evolutionary computational intelligence can be applied in games as they provide  \enquote{ competitive, dynamic
+environments that make ideal test beds
+for computational intelligence theories,
+architectures, and algorithms.}\cite[pp. 10]{Lucas2006}\\
+Examples of implemented evolutionary computation in both board games and video games is concluded to, in some cases, be superior to other systems. They describe how evolutionary computation is applicable in games and mention the development of new game genres based upon evolutionary computation. Additionally, while refering to 2D arcade game of Pacman, they describe that \enquote{advantage
+of working with older-style arcade games is that they
+offer a sufficiently interesting challenge, while being much
+easier to implement and faster to simulate.} \cite[pp 15]{Lucas2006} \\
 
+As Lucas and Kendall has validated the usage of Pacman as a possible test bed for evolutionary computation, the relevance of examining pre existing implementations, using Pacman, is self apparent.\\
+As mentioned earlier, evolutionary computation offers several models of computation. By examining the existing implementations, we can most likely distinguish one or several methods of successfully implementing evolutionary computation.
 
-Reproduction wants to recombine succesful genes there have survival potential, and keep on creating an population thats getting better and better for each offspring. \cite{Fogel1997}
-
-Selection distinguish between the parent and the offsprings quality for survival. It selects either the parent or offspring for being allowed in the next generation, typically done through their ability to solve problems and their age.   \cite{Smith2007}
-
-Mutation is applied to the parent through input, and will deliver offspring there is slightly modified mutanted. Here the offspring depends on random choices out from a probability distribution.  \cite{Smith2007}
-
-
-Competition occurs when the population is expanding in a limited resource space, and both the parent and offspring has to fight for survival. Here it is the selection process who determine who lives. \cite{Fogel1997}
-
-
-
-A possible algorithm that make use of these four processes are the Genetic Algorithm (GA). The GA make use of the evolutionary algorithm and expand it to an algorithm that controls the best fit solution the EA is supposed to solve. Naturally we want to keep the best surviving solution, while abandoning the rest and this can be done through a fitness score that determinate a rank depending on ther suitability for the problem to be solved. \cite {Sivanandam2008}
-
-According to a list created by Deepa, 2008 can it both have advantages and disadvantages when using a GA in games.
-For example does "a GA have a wider solution space" (depending on the resources), that can differ accordingly to how many branches the parent have created. This means there can be several solutions the GA can pick from and choose the best fit option it finds succesful.
-A second advantage is "it can easily be modified for different problems" because it can make use of the mutation process.
-Nevertheless is the GA not total problem free and have some disadvantages as well. "There might be problems in identifying the fitness score," and "defining the problem that needs to be solved."
+\subsubsection{Evolutionary computation in Pacman}
 
 
+There exists many examples of applied evolutionary algorithms in Pacman, as well as Ms. Pacman whereof the earliest examples was that of Koza in 1992.\cite{Koza1992}
 
-were it been used
+This implementation utilized genetic programming and was aimed at controlling Pac-Man himself through functions, conditions and primitives to evolve the movement of Pac-Man. \cite[pp. 2]{Lucas2005}
+Research conducted by Simon M. Lucas in 2005 also tried to approach a method to evolve Ms. Pac-Man playing agents through the use of an evolutionary algorithm. \cite{Lucas2005}
 
+With their evolutionary algorithm the objective was to evolve the best possible player, where they measured some average score over numerous games, in order to create a neural network to be evolved. \cite[pp. 8]{Lucas2005}
 
+in the conclusions of their research, it is mentioned that whether or not the ghosts behaved deterministic or non-deterministic would have a significant effect on the evolved player. A non-deterministic version of the game would result in a much harder game  as the evolved player must learn strategies under different circumstances in the game rather than exploiting the deterministic game, where the game would have a certain way the ghosts move, which would become predictable for the evolved player.\cite[pp. 8]{Lucas2005}
 
+Much similarly, but with the focus on ghost behaviour, is the research of Kalyanpur and Simon, 2001. They propose a method to improve the level of play of the ghosts in Pacman by the use of an evolutionary computation method that utilized a combination of genetic algorithms and neural networks. \cite{Kalyanpur2001}
 
+amongst the conclusions of their implemented Genetic Algorithm and Neural Networks, they describe that it can indeed be applied in games such as Pacman. Additionally they describe the Genetic Algorithms are used to isolate the best strategy, represented by the fittest ghosts of a current generation of ghosts, and thereby pursue to include these characteristics of ghost behaviour onto the next generation. \cite[pp. 8]{Kalyanpur2001}
 
+The implemented Neural Network is described to calculate the Genetic Algorithm parameters, which is used to improve the actual efficiency of their mentioned genetic reproduction within the game. Generally for the conclusions of their implementation is that there indeed is potential in the usage of evolutionary computation in games.
+
+It is however noteworthy that their Pac-Man platform is self constructed, and does not use the original game platform as a test bed for the research in ghost behaviour.
+
+An example of implemented Genetic Programming is also done by Brandstetter and Ahmadi, 2012. They propose an approach as to how Ms. Pacman can be controlled based on a Genetic Algorithm.
+They describe how Ms. Pac Man can be controlled by retrieving information about the current game state in order to find some optimal movement direction.
+With their applied method of application, the evolved Ms. Pac Man controller was able to play on a level of a good beginner human player. \cite{Brandstetter2012}
+
+The mentioned examples are a few possible implementations of evolutionary computation in Pacman and Ms. Pacman. The combined applied methods in these examples are genetic programming, genetic algorithms, neural networks to control genetic algorithm parameters and evolutionary algorithms.\\
+
+The difference between genetic algorithms and genetic programming is the actual representation of solutions, whereof the genetic programming is a subsection of genetic algorithms. The algorithm creates strings of data that combined represent some solution to a problem and the programming solutions are actual computer programs.\cite{genetic}
+Genetic algorithms and genetic programming are subtypes of evolutionary algorithms.
+
+What is interesting about the examples of applied evolutionary computation in Pacman is the method of application. The implementation does solely focus upon the improved solutions of the actual behaviours of either the ghost(s) or Pacman AI.\\
+Even though a prominent factor of Pacman AI is the behaviour of either the ghosts or Pacman, there are certain aspects which is still not speicified in the above mentioned examples of evolutionary computation implementation. Behaviours of either the ghosts or pacman is described, but there are several other aspects of plausible application of evolutionary computation that serves as a interesting aspect of plausible application of evolutionary computation.\\
