@@ -3,27 +3,27 @@
 \section{Analysis} \label{sec:analysis}
 
 
-% Pacman content research
+% Pac-man content research
 
 
-\subsection{Pacman}
+\subsection{Pac-man}
 \input{chapters/analysis/ai_pathfinding.tex}
-\subsubsection{Technical details/mechanics/paramters}
+\subsubsection{Technical details/mechanics/parameters}
 
 \textbf{About}\\
-Pacman is an arcade game which was developed by the company Namco, and was first released in 1980's.
+Pac-man is an arcade game which was developed by the company Namco, and was first released in 1980s.
 
-Extensive documentation and description of Pacman has been accounted for by Pittmann, 2011 \cite{Pittman2011}.
+Extensive documentation and description of Pac-man has been accounted for by Pittmann, 2011~\cite{Pittman2011}.
 
 \textbf{Purpose}
-The general purpose of the game is to control Pacman through a maze while gathering dots. Once all the dots within the maze has been collected by Pacman, the player proceeds to the next level. There are 255 levels in total.\\
+The general purpose of the game is to control Pac-man through a maze while gathering dots. Once all the dots within the maze has been collected by Pacman, the player proceeds to the next level. There are 255 levels in total.
 
 While trying to proceed to the next level by collecting dots, there are also several other incorporated features.
 
 \begin{figure}[!htbp]
 \centering
 \includegraphics[scale=0.5]{pacman_level.png}
-\caption{Pacman level screenshot: \cite{Pittman2011} }
+\caption{Pac-man level screenshot: \cite{Pittman2011} }
 \label{fig:Pacman}
 \end{figure}
 
@@ -32,50 +32,54 @@ On figure \ref{fig:Pacman}, the setup for a level is displayed. The following el
 
 \begin{itemize}
 \item maze\\
-The maze is the area of which the Pacman and ghosts navigates around throughout a level. There exists many different mazes which depends on the version of Pacman.
-\item Pacman\\
-Pacman is the playing agent that is navigated throughout the levels by moving up, down, left and right.
+The maze is the area of which the Pac-man and ghosts navigates around throughout a level. There exists many different mazes which depends on the version of Pac-man.
+\item Pac-man\\
+Pac-man is the playing agent that is navigated throughout the levels by moving up, down, left and right.
 \item Ghosts\\
-The ghosts, as seen on figure \ref{fig:Pacman}, is Blinky, Pinky, Inky and Clyde. They emerge from the center of the maze and chases the Pacman throughout the level, each using unique behaviours to catch him. Description of the ghost behaviours can be found in section XX.
+The ghosts, as seen on figure \ref{fig:Pacman}, is Blinky, Pinky, Inky and Clyde. They emerge from the center of the maze and chases the Pacman throughout the level, each using unique behaviors to catch him. Description of the ghost behaviors can be found in section XX.
 \item dots and energizers\\
-The dots within the maze functions as the foundation for winning a level in Pacman. Once all the dots are picked up/eaten by Pacman, the level is won.\\
-The dots does however also grant points to the player.\\
+The dots within the maze functions as the foundation for winning a level in Pacman. Once all the dots are picked up/eaten by Pacman, the level is won.
+
+The dots does however also grant points to the player.
+
 Each dot is worth 10 points. In the original game, as stated by Pittman, 2011 \cite{Pittman2011}, there are 240 dots in total which amounts to 2400 points.
 
 Energizers, which can be seen on figure \ref{fig:Pacman} as 4 bigger dots placed in each corner of the maze also grants points. 50 points each.
-In combination, the total amount of points acquired by dots and energizers are  2600. The energizers does however also alter the state of the ghosts into a mode of which it is possible for the Pacman to eat the ghosts and thereby also acquiring points for a limited amount of time.\\
-While the ghosts remain in the state of "fleeing" caused by the Pacman eating the energizer, each consecutive eaten ghost will result in twice as many points as the previus eaten ghost, whereof the first ghost gains the player 200 points.\\
-If the player succesfully eats all four ghosts wile the "fleeing" state is active, the player acquire a total of 3000 points.\\
+In combination, the total amount of points acquired by dots and energizers are  2600. The energizers does however also alter the state of the ghosts into a mode of which it is possible for the Pacman to eat the ghosts and thereby also acquiring points for a limited amount of time.
+
+While the ghosts remain in the state of "fleeing" caused by the Pacman eating the energizer, each consecutive eaten ghost will result in twice as many points as the previous eaten ghost, whereof the first ghost gains the player 200 points.
+
+If the player successfully eats all four ghosts wile the "fleeing" state is active, the player acquire a total of 3000 points.
 
 If all ghosts are consumed under the "fleeing" state of each energizer, in combination with the points from the gathered dots the combined score is 14600.
 \item fruits\\
 The fruits in Pacman are bonus elements that appear in the maze at certain times through a level which also adds points to the player, if collected. The fruit appears twice in each level and spawns when a certain amount of dots has been eaten.
-The amount of points gained from the fruits range from anything from 100 to 5000 points, depending on the type of fruit that spawns. Also worth mentioning is that the fruit dissapear after a certain amount of time if not consumed in time.
+The amount of points gained from the fruits range from anything from 100 to 5000 points, depending on the type of fruit that spawns. Also worth mentioning is that the fruit disappear after a certain amount of time if not consumed in time.
 \end{itemize}
 
 
 \subsection{Player performance(PP)}
 
-As described in the final problem statement, we try to implement a genetic algorithm that corresponds to the players' performance in Pacman.\\
+As described in the final problem statement, we try to implement a genetic algorithm that corresponds to the players' performance in Pacman.
 
 
-The aim of identifying player performace, is to focus on the specific game parameters, mechanics and functionalities within Pacman to access the performance of the player. We observe elements within the game, which might imply some indications as to how the player is performing.\\
+The aim of identifying player performance, is to focus on the specific game parameters, mechanics and functionalities within Pacman to access the performance of the player. We observe elements within the game, which might imply some indications as to how the player is performing.
 
-In section XX, we account for the usage of genetic algorithms. It is in section XX how the evaluation of a fitness function is conducted. How it is defined largely depends on the problem at hand. There are no single solution to how a given problem can be evaluated by a fitness function, and these properties are transferable to the purpose and ability to identify player performance in Pacman.\\
+In section XX, we account for the usage of genetic algorithms. It is in section XX how the evaluation of a fitness function is conducted. How it is defined largely depends on the problem at hand. There are no single solution to how a given problem can be evaluated by a fitness function, and these properties are transferable to the purpose and ability to identify player performance in Pacman.
 
-There are however several examples of how some implementations of genetic algorithms in Pacman are accessed to account for their implemented fitness function. Such implementations can provide knowledge of how one might try to evaluate upon player perfomance.\\
+There are however several examples of how some implementations of genetic algorithms in Pacman are accessed to account for their implemented fitness function. Such implementations can provide knowledge of how one might try to evaluate upon player performance.
 
-In the research of Lucas, 2005 \cite{Lucas2005}, he mentions how further directions of research might point towards assignment of fitness scores based upon the objective of ghosts, whereof the fitness is assigned to ghosts that tries to minimize the possible attainable score of Pacman.\\
+In the research of Lucas, 2005 \cite{Lucas2005}, he mentions how further directions of research might point towards assignment of fitness scores based upon the objective of ghosts, whereof the fitness is assigned to ghosts that tries to minimize the possible attainable score of Pacman.
 
 In the research conducted by Simon and Kalyanpur, 2001 \cite{Kalyanpur2001} they simply assigned the highest fitness score to the ghost that actually caught Pacman.
 
-Additionally in the research of Gallagher and Ledwich, 2007 \cite{Gallagher2007}, they calculate the fitness based upon some average amount of points in a game of Pacman in some averaged percentage over several generations.\\
+Additionally in the research of Gallagher and Ledwich, 2007 \cite{Gallagher2007}, they calculate the fitness based upon some average amount of points in a game of Pacman in some averaged percentage over several generations.
 
 As there are no conclusive outcome as to how one might access player performance, there are several criteria which can be outlined that will make a selection of possible player performance criteria possible.
 
 \begin{itemize}
-\item game parameters.\\
-such as points acquisition and successful completion of objectives or failures of not completing said objectives.
+\item Game parameters.\\
+Such as points acquisition and successful completion of objectives or failures of not completing said objectives.
 \item method of conduction.\\
 How the actual completions or failures are conducted. Time spent on up till completion or failure and the general method of attaining such results. Examples are, what directions was utilized, when did specific actions or choices occur. A general appraisal of the method to reach any specified goal.
 \end{itemize}
@@ -93,18 +97,19 @@ Genetic algorithms was invented by John Holland in 1975 and is proposed as a heu
 
 The Genetic Algorithm start with a set of plausible solutions and by the use of genetic operator alterations like reproduction, crossovers and mutations \cite{Baltzer2014}, it develops a new set of better solutions compared to the previous. By repeating this process, a population will theoretically improve until a satisfying result is found to the given problem. \cite{BCS2013}
 
-What is noteworthy about "satisfying results" is that we search for some better solution within a set of possible solutions, also referred to as search space. It is therefore not guaranteed to find some, if any, optimal solution to the problem but rather a/some solution(s) which can be interpreted as acceptably good. \cite[pp. 20/21]{Sivanandam2008}
+It is noteworthy about "satisfying results" is that we search for some better solution within a set of possible solutions, also referred to as search space. It is therefore not guaranteed to find some, if any, optimal solution to the problem but rather a/some solution(s) which can be interpreted as acceptably good. \cite[pp. 20/21]{Sivanandam2008}
 
 
-In genetic algorithms, populations and individuals covers the terminology of the solutions and searches thereof. A individual is to be considered a single solution to the problem and the population is the number of individuals involved. \cite[pp. 39]{Sivanandam2008}
+In genetic algorithms, populations and individuals covers the terminology of the solutions and searches thereof. An individual is to be considered a single solution to the problem and the population is the number of individuals involved. \cite[pp. 39]{Sivanandam2008}
 
 
 
 \subsubsection{Genetic Algorithm Components}
 
 A Genetic Algorithm consists of at least five components as described by Baltzer, 2014 \cite{Baltzer2014}. These components can be considered to be the main components in any genetic algorithm.
-\begin{itemize}
-\item \textbf{Chromosome / gene representation}
+
+
+\subsubsection*{Chromosome / gene representation}
 
 A representation of a population and the subordinate content, being chromosomes and genes as seen on figure \ref{fig:gene}.
 The genes functions as a string of some arbitrary length of data. A chromosome is a sequence of genes, whereof the combined chromosomes serves as the population. \cite[pp. 41]{Sivanandam2008}
@@ -112,7 +117,7 @@ The genes functions as a string of some arbitrary length of data. A chromosome i
 As mentioned above, each individual(chromosome) is a single solution to the problem at hand. The chromosomes can be considered to be \enquote{a point in the search space of candidate solutions} \cite[pp. 7]{Melanie1990} Melanie, 1990.
 
 
-\begin{figure}[!h]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[scale=1.0]{gene_chromosomes.jpg}
 \caption{gene, chromosomes and population description}
@@ -120,42 +125,34 @@ As mentioned above, each individual(chromosome) is a single solution to the prob
 \end{figure}
 
 The chromosomes which contains an array of genes is an abstract representation of data. Thus the chromosomes and genes must be encoded in some way, dependent on the problem. It is basically a method of representing the individual genes, which translates into the data.
-There are several ways that the genes can be encoded. Some of the encoding methods are listed by Obitko, 1998 \cite{Marek1998} and by Sivanandam, 2008 \cite[pp. 43]{Sivanandam2008}
+There are several ways that the genes can be encoded. Some of the encoding methods are listed by Obitko, 1998 \cite{Marek1998} and by Sivanandam, 2008 \cite[pp.43]{Sivanandam2008}
 
 The types of encoding methods are as follows:
 \begin{itemize}
 \item Binary encoding
 \item Octal encoding
-\item hexadeciman encoding
+\item hexadecimal encoding
 \item Permutation encoding(sequence of numbers)
 \item value encoding(string of values. numbers, letters, strings etc)
 \item Tree encoding(every chromosome is a tree of some objects)
 \end{itemize}
 
 
-\item \textbf{Initialisation of the population}
+\subsubsection*{Initialization of the population}
 
 A population is a collection of individuals(chromosomes).
-
-
 
 An initial population must be created as a starting point for the algorithm. This representation of a population is chosen randomly, as there might be no prior evident solutions. Dependent on the stated problem at hand, the initialization of populations might also be carried out with some good solutions to the problem. However in most cases, the initial population is chosen at random. \cite[pp. 41/42]{Sivanandam2008}
 
 
-
-
-
-\item \textbf{evaluation function(fitness)}
+\subsubsection*{evaluation function(fitness)}
 
 In order to improve further generations, the fitness of each chromosome in the current population must be evaluated. The genetic algorithm does so by the use of a fitness function, which assign some score(fitness) to each of the chromosomes within a specific population.
-In general manners, the fitness of a given chromosome is dependant on how successively the given chromosome solved the designated problem, and is conveyed through a range of values. The better the solution, the higher the fitness score \cite[pp. 8]{Melanie1990}
+In general manners, the fitness of a given chromosome is dependent on how successively the given chromosome solved the designated problem, and is conveyed through a range of values. The better the solution, the higher the fitness score \cite[pp. 8]{Melanie1990}
 
-how "good" the solution is, is the whole purpose of the fitness function to identify. the fitness function perform some evaluation of the acquired results and then assigns specific fitness score to that solution. How the fitness function performs the evaluation of solution is dependent on the problem itself. There are no single solutions as to how the fitness function is to be developed, but can be really be anything, that successively covers the plausible methods of evaluating the solutions. \cite[pp. 31]{Sivanandam2008}
+How "good" the solution is, is the whole purpose of the fitness function to identify. The fitness function perform some evaluation of the acquired results and then assigns specific fitness score to that solution. How the fitness function performs the evaluation of solution is dependent on the problem itself. There are no single solutions as to how the fitness function is to be developed, but can be really be anything, that successively covers the plausible methods of evaluating the solutions. \cite[pp. 31]{Sivanandam2008}
 
-
-
-
-\item \textbf{Genetic operators altering chromosomes(reproduction/selection, crossover and mutation.}
+\subsubsection*{Genetic operators altering chromosomes(reproduction/selection, crossover and mutation.}
 
 
 Genetic operators in some of the more simple Genetic Algorithms are reproduction/selection, crossover and mutation. Melanie, 1990. \cite{Melanie1990}
@@ -178,7 +175,7 @@ Some of the selection methods are:
 \item Fitness Proportionate selection
 \item Scaling Selection
 \item Generation Selection
-\item Hierachical Selection
+\item Hierarchical Selection
 \end{itemize}
 The list is from Sivanandam, 2008 \cite[pp. 46-50]{Sivanandam2008} and Markzyk, 2004 \cite{Adam2004}.
 
@@ -224,8 +221,8 @@ Lastly, reversing is randomly choosing a gene within a chromosome and thereafter
 
 Much like crossover probability, there is also a mutation probability. It states how often parts of the chromosome will be mutated. If a mutation occurs, then the chromosome is changed, in some way as specified above. If the mutation probability is 0 percent, then no mutation occurs and if the mutation is at 100 percent, then the whole chromosome is changed in accordance with the type of mutation that is specified. The reason to implement mutation of the chromosomes is to ensure that the genetic algorithm does not fall into some local extremes.\cite[pp. 57]{Sivanandam2008}
 
-\item \textbf{Parameters for population size and probabilities of genetic operators.}
-\end{itemize}
+\subsubsection{Parameters for population size and probabilities of genetic operators.}
+
 
 The population size covers the amount of solutions(chromosomes) that is in the actual population in the search space. The actual size of the population does very much depend on the problem at hand.\cite[pp. 42]{Sivanandam2008}
 
@@ -235,19 +232,19 @@ It is mentioned in the appropriate sections concerning mutation and crossover wh
 
 The alterations in the probability may or may not have positive effects on the new generations of populations.
 
-Marek, 1998\cite{Marek1998}  describes some recommendations based upon emprirical studies which plausible can be used as a reference point, but can be considered to be general and not necessarily the most optimal configurations, so alterations and adjustments must be conducted to account for the specific problem at hand.
+Marek, 1998\cite{Marek1998}  describes some recommendations based upon empirical studies which plausible can be used as a reference point, but can be considered to be general and not necessarily the most optimal configurations, so alterations and adjustments must be conducted to account for the specific problem at hand.
 
-the general recommendations are described as followed:
+The general recommendations are described as followed:
 \begin{itemize}
 \item Crossover rate: 80-95 percent.
 
 It is however mentioned that occurrences of crossover probabilities of 60 percent was optimal in some undefined problem scenarios.
 \item Mutation rate: 0.5-1.0 percent
 
-The mutation rate are described as being optimal when very low.
+The mutation rate is described as being optimal when very low.
 \item population size
 
-It is described that population size very much depend on encoding and size of the chromosomes. a population size of 20-30 is stated as good, but other examples of 50-100 are also accounted for as a good population size.
+It is described that population size very much depend on encoding and size of the chromosomes. A population size of 20-30 is stated as good, but other examples of 50-100 are also accounted for as a good population size.
 \end{itemize}
 
 \subsubsection{Genetic algorithm procedure}
@@ -270,33 +267,18 @@ A general genetic algorithm is here defined algorithmically by Malhotra et.al, 2
 \begin{description}
 \item[a:] Select parent chromosomes based upon the fitness score.
 \item[b:] Use the crossover operator on the parents to form new children.
-\item[c:] Use the mutation operator to mutate the chrildren.
+\item[c:] Use the mutation operator to mutate the children.
 \item[d:] Place the children into the new population.
 \end{description}
 \item[Replacement:] Use the new generation in the algorithm.
-\item[Test:] If the succes criteria/conditions is met, terminate the algorithm and return the solution in the population.
+\item[Test:] If the success criteria/conditions is met, terminate the algorithm and return the solution in the population.
 \item[Loop:] Return and run step 2.
 \end{description}
 } \cite[pp. 40]{Rahul2011}
 
 
-FOR MY OWN REFERENCE(perhaps insert into glossary)
-\begin{itemize}
-
-\item Individual - Any possible solution
-\item Population - Group of all individuals
-\item Search Space - All possible solutions to the problem
-\item Chromosome - Blueprint for an individual
-\item Trait - Possible aspect of an individual
-\item Allele - Possible settings for a trait
-\item Locus - The position of a gene on the chromosome
-\item Genome - Collection of all chromosomes for an individual
-
-\end{itemize}
-
-
 
 \subsubsection{Summary}
-In section XX, we describe the mechanics and implemented features of Pacman in order to account for a plausible implementation to use as a test bed for the attended in-cooperated genetic algorithm. To do so, we have researched the theories and methods of actual applications of genetic algorithms.the combination of acquired research  will allow us to combine the content of Pacman with the necessities of an implemented genetic algorithm in order to successfully answer to the final problem statement.\\
-Furthermore we account for the formulation of fixed behaviours in section XX, and find the specific game features that represents itself as our interpretation of finite state machine.\\
-Lastly, we find that interpretation of player performance is problem dependant, and the actual assessment will be accounted for in the design chapter, see chapter XX.
+In section XX, we describe the mechanics and implemented features of Pacman in order to account for a plausible implementation to use as a test bed for the attended in-cooperated genetic algorithm. To do so, we have researched the theories and methods of actual applications of genetic algorithms. The combination of acquired research  will allow us to combine the content of Pacman with the necessities of an implemented genetic algorithm in order to successfully answer to the final problem statement.\\
+Furthermore we account for the formulation of fixed behaviors in section XX, and find the specific game features that represents itself as our interpretation of finite state machine.\\
+Lastly, we find that interpretation of player performance is problem dependent, and the actual assessment will be accounted for in the design chapter, see chapter XX.
