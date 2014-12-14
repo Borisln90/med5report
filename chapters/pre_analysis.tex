@@ -1,36 +1,37 @@
+
 %!TEX root = ../main.tex
 
-\section{Investigation} \label{sec:preanalysus}
-This chapter will investigate and discuss the viability of the initial problem statement from above. It will the investigate the various aspects of artificial inteligence as well as state of the art within self-modifying AIs. The chapter will also provide various delimitations as to which parts of the initial problem statement can be used for further analysis. This chapter will develop the initial problem statement into a final problem statement.
-
-
+\section{Investigation} \label{sec:preanalysis}
+We will investigate and discuss the viability of the initial problem statement from above. We will then investigate the various aspects of artificial intelligence as well as state of the art within self-modifying AIs. The chapter will also provide various delimitations as to which parts of the initial problem statement can be used for further analysis. This chapter will develop the initial problem statement into a final problem statement.
 
 \input{chapters/pre_analysis/ai.tex}
 
-\subsection{Artificial Intelligence in Pacman(SOTA)}
+\subsection{Artificial Intelligence in Pac-man(SOTA)}
 \input{chapters/pre_analysis/ai_behavior_sota.tex}
-\input{chapters/pre_analysis/self_modifying_sota.tex}
+%\input{chapters/pre_analysis/self_modifying_sota.tex}
 
 \subsection{Summary}
 To summarize the content of investigation, there are several aspects of applicable knowledge that will make it possible to further develop a specified problem statement.
 
 \begin{itemize}
 \item Artificial intelligence\\
-We find a definition of artificial intelligence that is suitable for game development. 
+We find a definition of artificial intelligence that is suitable for game development.
 
 \item Evolutionary computation\\
-in section \ref{section:selfmodifyingai},we account for the self-modifying AI opponent term and find that a possible method of self-modifications can be conducted by the use of complex adaptive systems(CAS).\\
+In section \ref{sec:selfmodifyingai},we account for the self-modifying AI opponent term and find that a possible method of self-modifications can be conducted by the use of complex adaptive systems(CAS).\\
 
-within the field of biological computing, we find that evolutionary computation is indeed used in games, with numerous examples of successful implementations in the game of Pacman. Here several examples of genetic algorithms are applied, which is a method of evolutionary computation. The genetic algorithm, are in the specified examples used to improve the performance of either the ghosts, or the actual Pacman playing agent.
+Within the field of biological computing, we find that evolutionary computation is indeed used in games, with numerous examples of successful implementations in the game of Pac-man. Here several examples of genetic algorithms are applied, which is a method of evolutionary computation. The genetic algorithm, are in the specified examples used to improve the performance of either the ghosts, or the actual Pac-man playing agent.
+
 \item game delimitation\\
-Additionally, as specified in section \ref{section:selfmodifyingai} we find evidence to support that it is indeed possible to implement a self modifying AI in Pacman, and find several examples of actual implementations of such.\\
+Additionally, as specified in section \ref{sec:selfmodifyingai} we find evidence to support that it is indeed possible to implement a self modifying AI in Pac-man, and find several examples of actual implementations of such.
 
-Based upon the research, there are evident examples of self-modifying AI's that is able to improve the performance of the actual ghost or Pacman AI by the use of evolutionary computation. 
-\item Finite state machines\\
-In section XX we find that Pac-Man makes use of a finite state machine to switch between the three modes of the ghost opponents. The three modes are chase mode, scatter and frightened mode. We find that the implementations of self-modifying AI's directly manipulates the ghost behaviors. 
+Based upon the research, there are evident examples of self-modifying AI's that is able to improve the performance of the actual ghost or Pac-man AI by the use of evolutionary computation.
+
+\item Finite State Machines\\
+In section XX we find that Pac-Man makes use of a finite state machine to switch between the three modes of the ghost opponents. The three modes are chase mode, scatter and frightened mode. We find that the implementations of self-modifying AI's directly manipulates the ghost behaviors.
 
 \item player performance\\
-The purpose of identifying player performance is to focus on specific game parameters and mechanics within the specified game to access the performance of the player. this is done by comparing goals with the progress of attaining those said goals. As the game, along with implemented game parameters and mechanics is not yet decided and specified, the definition of player performance will be conducted later in the analysis.
+The purpose of identifying player performance is to focus on specific game parameters and mechanics within the specified game to access the performance of the player. This is done by comparing goals with the progress of attaining those said goals. As the game, along with implemented game parameters and mechanics is not yet decided and specified, the definition of player performance will be conducted later in the analysis.
 \end{itemize}
 
 With the following known aspects of investigation, it is possible to define a final problem statement as such.
