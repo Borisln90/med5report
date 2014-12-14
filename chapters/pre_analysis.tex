@@ -18,6 +18,8 @@ To summarize the content of investigation, there are several aspects of applicab
 
 \begin{itemize}
 \item Artificial intelligence\\
+We find a definition of artificial intelligence that is suitable for game development. 
+
 \item Evolutionary computation\\
 in section \ref{section:selfmodifyingai},we account for the self-modifying AI opponent term and find that a possible method of self-modifications can be conducted by the use of complex adaptive systems(CAS).\\
 
@@ -26,13 +28,14 @@ within the field of biological computing, we find that evolutionary computation 
 Additionally, as specified in section \ref{section:selfmodifyingai} we find evidence to support that it is indeed possible to implement a self modifying AI in Pacman, and find several examples of actual implementations of such.\\
 
 Based upon the research, there are evident examples of self-modifying AI's that is able to improve the performance of the actual ghost or Pacman AI by the use of evolutionary computation. 
-
-In Pacman, it is well known that there are several AI implementations of behaviours. Each ghost in Pacman chases Pacman in different ways, and there are implementations of behaviours whereof the ghosts will flee from pacman under specific circumstances and sometimes interrupt the chase of Pacman, only to seek out a corner of the maze for a limited amount of time before chasing Pacman again.
-
-What if the implementation of evolutionary computation is not to control  and improve the actual behaviours of the ghosts or Pacman, but rather to control and improve the alternations between said behaviours within the game?
+\item Finite state machines\\
+In section XX we find that Pac-Man makes use of a finite state machine to switch between the three modes of the ghost opponents. The three modes are chase mode, scatter and frightened mode. We find that the implementations of self-modifying AI's directly manipulates the ghost behaviors. 
 
 \item player performance\\
+The purpose of identifying player performance is to focus on specific game parameters and mechanics within the specified game to access the performance of the player. this is done by comparing goals with the progress of attaining those said goals. As the game, along with implemented game parameters and mechanics is not yet decided and specified, the definition of player performance will be conducted later in the analysis.
 \end{itemize}
+
+With the following known aspects of investigation, it is possible to define a final problem statement as such.
 
 
 \subsection{Final Problem Statement} \label{sec:finalproblemstatement}
