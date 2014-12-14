@@ -7,7 +7,6 @@
 
 
 \subsection{Pacman}
-\input{chapters/analysis/ai_pathfinding.tex}
 \subsubsection{Technical details/mechanics/paramters}
 
 \textbf{About}\\
@@ -52,6 +51,23 @@ If all ghosts are consumed under the "fleeing" state of each energizer, in combi
 The fruits in Pacman are bonus elements that appear in the maze at certain times through a level which also adds points to the player, if collected. The fruit appears twice in each level and spawns when a certain amount of dots has been eaten.
 The amount of points gained from the fruits range from anything from 100 to 5000 points, depending on the type of fruit that spawns. Also worth mentioning is that the fruit dissapear after a certain amount of time if not consumed in time.
 \end{itemize}
+
+\input{chapters/analysis/ai_pathfinding.tex}
+
+\subsubsection{AI behavior}
+Even though the ghosts all share the same modes, the implementation of specifically chase mode is different for each ghost.
+
+\subsubsection*{The red ghost (Blinky)}
+The red ghost is the most aggressive of the four ghosts, and is described as the shadow. His chase mode uses Pac-Mans current tile as the target tile, which makes him difficult to shake off when he is close. Also implemented is “Cruise Elroy” mode. Twice each round, Blinky will turn into Elroy. This is determined by the number of pellets left in the maze. When Blinky turns into Elroy, he will become faster; first time as fast as the Pac-Man, and the second time he will be faster. His scatter mode is also changed when in Elroy mode, instead of wandering the maze aimlessly, he will continue to chase the Pac-Man. He will turn around and leave the Pac-Man until an intersection is reached.
+
+\subsubsection*{The pink ghost (Pinky)}
+When in chase mode, Pinky will not use the Pac-Mans current tile as the target, instead his target is four tiles in front of the Pac-Man. His mission is therefore to cut the Pac-Man off and box him in. Interestingly when the Pac-Man is walking to the top of the maze, Pinkys target changes from four tiles ahead to four ahead \textit{and} four to the left. This is because of a bug in the code that was not fixed.
+
+\subsubsection*{The blue ghost (Inky)}
+Inky can be seen as one of the more dangerous of the four. Instead of having just one targeting scheme, he seems to switch between the schemes of his comrades, sometimes chasing, sometimes blocking off or even wandering effortlessly. As with Pinky, Inky also uses an offset tile two tiles in front of Pac-Man. Inky also uses Blinkys position in regards to the Pac-Man to determine his target tile. This has the effect that Inky will be close to the Pac-Man whenever Blinky is close to the Pac-Man and vice-versa.
+
+\subsubsection*{The orange ghost (Clyde)}
+Clyde seems to stay away from the Pac-Man and do his own thing. He uses the distance to the Pac-Man to determine his target tile. If he is far from the Pac-Man he will go into chase mode just as Blinky would. When he comes within eight tiles of the Pac-Man he will turn around and go into scatter mode. While Clyde will never reach the Pac-Man on his own, he can still be dangerous if the Pac-Man gets in his way for instance during scatter mode.
 
 
 \subsection{Player performance(PP)}
