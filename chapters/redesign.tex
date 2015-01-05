@@ -1,1 +1,49 @@
 \section{Re-design} \label{sec:redesign}
+
+This chapter is about using the knowledge gained from the discussion and then re-design the product to optimize it for the final problem statement.
+
+\subsection{Pac-Man}
+
+
+\subsubsection{Pacman Artificial Intelligence}
+
+One of main reasons that we received random deaths from pac-man in the simulations were due to pacman dying at places where players normally would have avoided the ghosts. These deaths were caused by pacman stopping in the simulation at the point where the player died in the real game. There are also cases were pacman simply ran blindly into the ghosts during the simulation. The conclusion is that these actions could be removed by optimising pacman with an AI that could work as a player during simulations to reenact real game situation.  
+
+This could be done by adding a new recording system for the simulator. Instead of tracking each of pac-man's coordinates, a system that tracks the players pattern could be made. This pattern recognition could work as following:
+
+When the player makes his playthrough of the game the pattern recognition will take notes on how the player behaves throughout the maze. It will use these behaviors in the simulation to simulate like the player and instead of walking directly into a ghost, it might take the decision of turning in a direction that the player would have taken. This would challenge the GA  more and force it to create more challenging ghosts based on the fitness function.
+
+
+\subsubsection{Frozen Ghosts}
+
+The frightened mode encountered some bugs along the way that got the ghosts stuck in the maze. It got remade and was programed to make the ghosts freeze at the spot when pac-man entered the energizer mode. If the ghosts were lined up correctly the player could many of the ghosts and gain a higher score than intended. This could be a possible reason for the player points spikes in our data sets.
+
+
+\subsubsection{Pacman Stuck}
+
+When a player lost a game of pac-man and the simulation began running pac-man ended up with missing some paths to follow. This was caused by the way pac-mans movements were recorded by directions for each frame. In the simulation pac-man simply stopped changing directions at the frame that player died in the real game. This caused that any ghost with any set of modes could hit pac-man and might get a better evaluation score than deserved. 
+
+
+Test participants missing feedback from the game
+
+Some feedback that was given during testing was missing feedback from the game itself. One of the aspects were missing sound. Some of the test participants had a hard time to calculate how long pac-man would be in energized mode and sometime didn’t even realise that they had left the mode before running into a ghost. Another aspect were missing feedback on when the ghost changed behavior. Some of the participants found it unfair that the ghosts changed mode without any kind of warning.
+
+
+\subsubsection{Pathfinder Bug?}
+
+One of the bugs that have been noticed is that the ghosts lose all sense of intelligence when pac-man is standing still or they change behavior at a unfortunate point in the maze. We suspect it to be something with our pathfinder but it has not been determined yet. 
+
+
+
+\subsection{Genetic Algotrithm}
+
+\subsubsection{Player performance} 
+
+We have decided to base our players performance on the high score of the simulation of the players movements. The fitness score only uses the high score of each simulation. It compares all of the current solutions and finds the simulation that forced pac-man to get the lowest score in the simulation. By doing this we force the genetic algorithm to only aim for making the game more difficult for the player. If we wanted to make an more overall player performance and try to match players skill level, the equation should be changed to keep a balanced difficulty. 
+
+To fulfill these new requirements the fitness function have to be re-designed. The player high score from the non-simulated game should be the focus point in the fitness score. After the simulations has been executed they will each be compared with the player high score. The evaluation in the fitness function will work like this. The equation will pick the one simulations that is just below the player hight score and another simulation that is just above. From here it will detect if the player won or lost his last game. If the player has won his game the simulation that is slightly above the player high score will chosen as the new chromosome. If the player on the other hand has lost his game the simulation that is slightly below the player high score will be chosen as the new chromosome.
+
+Player performance will be considered a match if the following occurrences is observed:
+
+Test participants with different skill levels, will play defined amount of games where of each game represent a new generation. The obtained score must be the amount of points attained , as specified in a threshold. A threshold value of points in the prototype will be determined as well.
+If the points obtained by the test participants are higher than the threshold - the genetic algorithm will adjust accordingly and increase the difficulty. Likewise , if the player attains a lesser amount of points than the specified threshold the difficulty will be lowered according, allowing the player to attain points equal to the specified threshold.
