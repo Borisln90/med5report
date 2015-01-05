@@ -2,12 +2,12 @@
 
 \section{Analysis} \label{sec:analysis}
 In this chapter we will analyze further on the points brought up in the investigation. 
-We will analyze the Pac-man in detail to find the parameters and inner mechanics of the game that we can manipulate using the GA.
+We will analyze Pac-Man in detail to find the parameters and inner mechanics of the game that we can manipulate using the genetic algorithm (GA).
 Furthermore we will investigate how others have identified the performance of the players in order for the GA to know how the player is doing.
 Finally we will analyze genetic algorithms further and define the areas that need to be implemented in order to get a functioning genetic algorithm. 
 
 
-The following content about the original Pac-man and it's implemented mechanics, pathfinding system and game parameters are presented to account for the original implementation of the game. Thus we can utilize the content to account for our interpretations and evaluations of player performance as specified in the final problem statement. This is a description of the original Pa-cman released in 1980's. \cite{Pittman2011}
+The following content about the original Pac-Man and it's implemented mechanics, pathfinding system and game parameters are presented to account for the original implementation of the game. Thus we can utilize the content to account for our interpretations and evaluations of player performance as specified in the final problem statement. This is a description of the original Pac-Man released in 1980's. \cite{Pittman2011}
 
 % Pac-man content research
 
@@ -18,10 +18,10 @@ The following content about the original Pac-man and it's implemented mechanics,
 \textbf{About}\\
 Pac-man is an arcade game which was developed by the company Namco, and was first released in 1980s.
 
-Extensive documentation and description of Pac-man has been accounted for by Pittmann, 2011~\cite{Pittman2011}.
+Extensive documentation and descriptions of Pac-man have been accounted for by Pittmann, 2011.~\cite{Pittman2011}.
 
 \textbf{Purpose}
-The general purpose of the game is to control Pac-man through a maze while gathering dots. Once all the dots within the maze has been collected by Pac-man, the player proceeds to the next level. There are 255 levels in total.
+The general purpose of the game is to control Pac-Man through a maze while gathering dots. Once all the dots within the maze have been collected by Pac-Man, the player proceeds to the next level. There are 255 levels in total.
 
 While trying to proceed to the next level by collecting dots, there are also several other incorporated features.
 
@@ -36,30 +36,30 @@ While trying to proceed to the next level by collecting dots, there are also sev
 On figure \ref{fig:Pac-man}, the setup for a level is displayed. The following elements in the game, within a single level, are the following:
 
 \begin{itemize}
-\item maze\\
-The maze is the area of which the Pac-man and ghosts navigates around throughout a level. There exists many different mazes which depends on the version of Pac-man.
-\item Pac-man\\
-Pac-man is the playing agent that is navigated throughout the levels by moving up, down, left and right.
+\item Maze\\
+The maze is the area of which the Pac-man and ghosts navigate around throughout a level. There exists many different mazes which depends on the version of Pac-Man.
+\item Pac-Man\\
+Pac-Man is the playing agent that is navigated throughout the levels by moving up, down, left and right.
 \item Ghosts\\
-The ghosts, as seen on figure \ref{fig:Pac-man}, is Blinky, Pinky, Inky and Clyde. They emerge from the center of the maze and chases the Pac-man throughout the level, each using unique behaviors to catch him. Description of the ghost behaviors can be found in section \ref{ssec:ai_behavior}.
-\item dots and energizers\\
-The dots within the maze functions as the foundation for winning a level in Pac-man. Once all the dots are picked up/eaten by Pac-man, the level is won.
+The ghosts, as seen on figure \ref{fig:Pac-man}, is Blinky, Pinky, Inky and Clyde. They emerge from the center of the maze and chase the Pac-man throughout the level, each using unique behaviors to catch him. Description of the ghost behaviors can be found in section \ref{ssec:ai_behavior}.
+\item Dots and energizers\\
+The dots within the maze functions as the foundation for winning a level in Pac-man. Once all the dots are picked up/eaten by Pac-Man, the level is won.
 
-The dots does however also grant points to the player.
+The dots do however also grant points to the player.
 
 Each dot is worth 10 points. In the original game, as stated by Pittman, 2011 \cite{Pittman2011}, there are 240 dots in total which amounts to 2400 points.
 
-Energizers, which can be seen on figure \ref{fig:Pac-man} as 4 bigger dots placed in each corner of the maze also grants points. 50 points each.
-In combination, the total amount of points acquired by dots and energizers are  2600. The energizers does however also alter the state of the ghosts into a mode of which it is possible for the Pac-man to eat the ghosts and thereby also acquiring points for a limited amount of time.
+Energizers, which can be seen on figure \ref{fig:Pac-man} as 4 bigger dots placed in each corner of the maze also grant 50 points each.
+In combination, the total amount of points acquired by dots and energizers are 2600. The energizers do however also alter the state of the ghosts into a mode of which it is possible for Pac-Man to eat the ghosts and thereby also acquire points for a limited amount of time.
 
 While the ghosts remain in the state of "fleeing" caused by the Pac-man eating the energizer, each consecutive eaten ghost will result in twice as many points as the previous eaten ghost, whereof the first ghost gains the player 200 points.
 
 If the player successfully eats all four ghosts wile the "fleeing" state is active, the player acquire a total of 3000 points.
 
 If all ghosts are consumed under the "fleeing" state of each energizer, in combination with the points from the gathered dots the combined score is 14600.
-\item fruits\\
-The fruits in Pac-man are bonus elements that appear in the maze at certain times through a level which also adds points to the player, if collected. The fruit appears twice in each level and spawns when a certain amount of dots has been eaten.
-The amount of points gained from the fruits range from anything from 100 to 5000 points, depending on the type of fruit that spawns. Also worth mentioning is that the fruit disappear after a certain amount of time if not consumed in time.
+\item Fruits\\
+The fruits in Pac-Man are bonus elements that appear in the maze at certain times through a level which also adds points to the player, if collected. The fruit appears twice in each level and spawns when a certain amount of dots has been eaten.
+The amount of points gained from the fruits range from anything from 100 to 5000 points, depending on the type of fruit that spawns. Also worth mentioning is that the fruit disappears after a certain amount of time if not consumed in time.
 \end{itemize}
 
 \input{chapters/analysis/ai_pathfinding.tex}
@@ -68,7 +68,7 @@ The amount of points gained from the fruits range from anything from 100 to 5000
 Even though the ghosts all share the same modes, the implementation of specifically chase mode is different for each ghost.
 
 \subsubsection*{The red ghost (Blinky)}
-The red ghost is the most aggressive of the four ghosts, and is described as the shadow. His chase mode uses Pac-Mans current tile as the target tile, which makes him difficult to shake off when he is close. Also implemented is “Cruise Elroy” mode. Twice each round, Blinky will turn into Elroy. This is determined by the number of pellets left in the maze. When Blinky turns into Elroy, he will become faster; first time as fast as the Pac-Man, and the second time he will be faster. His scatter mode is also changed when in Elroy mode, instead of wandering the maze aimlessly, he will continue to chase the Pac-Man. He will turn around and leave the Pac-Man until an intersection is reached.
+The red ghost is the most aggressive of the four, and is described as \emph{the shadow}. His chase mode uses Pac-Man's current tile as the target tile, which makes him difficult to shake off when he is close. Also implemented is “Cruise Elroy” mode. Twice each round, Blinky will turn into Elroy. This is determined by the number of pellets left in the maze. When Blinky turns into Elroy, he will become faster; first time as fast as the Pac-Man, and the second time he will be faster. His scatter mode is also changed when in Elroy mode, instead of wandering the maze aimlessly, he will continue to chase the Pac-Man. He will turn around and leave the Pac-Man until an intersection is reached.
 
 \subsubsection*{The pink ghost (Pinky)}
 When in chase mode, Pinky will not use the Pac-Mans current tile as the target, instead his target is four tiles in front of the Pac-Man. His mission is therefore to cut the Pac-Man off and box him in. Interestingly when the Pac-Man is walking to the top of the maze, Pinkys target changes from four tiles ahead to four ahead \textit{and} four to the left. This is because of a bug in the code that was not fixed.
@@ -82,44 +82,43 @@ Clyde seems to stay away from the Pac-Man and do his own thing. He uses the dist
 
 \subsection{Player performance(PP)}\label{ssec:player-performance}
 
-As described in the final problem statement, we try to implement a genetic algorithm that corresponds to the players' performance in Pac-man.
+As described in the final problem statement, we try to implement a genetic algorithm that corresponds to the player's performance in Pac-Man.
 
 
-The aim of identifying player performance, is to focus on the specific game parameters, mechanics and functionalities within Pac-man to access the performance of the player. We observe elements within the game, which might imply some indications as to how the player is performing.
+The aim of identifying player performance, is to focus on the specific game parameters, mechanics and functionalities within Pac-Man to access the performance of the player. We observe elements within the game, which might give some indication as to how the player is performing.
 
-In section \ref{ssec:ga}, we account for the usage of genetic algorithms. It is in section \ref{ssec:ga} how the evaluation of a fitness function is conducted. How it is defined largely depends on the problem at hand. There are no single solution to how a given problem can be evaluated by a fitness function, and these properties are transferable to the purpose and ability to identify player performance in Pac-man.
+In section \ref{ssec:ga}, we account for the usage of genetic algorithms. It is in section \ref{ssec:ga} how the evaluation of a fitness function is conducted. How it is defined largely depends on the problem at hand. There are no single solution to how a given problem can be evaluated by a fitness function, and these properties are transferable to the purpose and ability to identify player performance in Pac-Man.
 
-There are however several examples of how some implementations of genetic algorithms in Pac-man are accessed to account for their implemented fitness function. Such implementations can provide knowledge of how one might try to evaluate upon player performance.
+There are however several examples of how some implementations of genetic algorithms in Pac-Man are accessed to account for their implemented fitness function. Such implementations can provide knowledge of how one might try to evaluate upon player performance.
 
-In the research of Lucas, 2005 \cite{Lucas2005}, he mentions how further directions of research might point towards assignment of fitness scores based upon the objective of ghosts, whereof the fitness is assigned to ghosts that tries to minimize the possible attainable score of Pac-man.
+In the research of Lucas, 2005 \cite{Lucas2005}, he mentions how further directions of research might point towards assignment of fitness scores based upon the objective of ghosts, whereof the fitness is assigned to ghosts that tries to minimize the possible attainable score of Pac-Man.
 
-In the research conducted by Simon and Kalyanpur, 2001 \cite{Kalyanpur2001} they simply assigned the highest fitness score to the ghost that actually caught Pac-man.
+In the research conducted by Simon and Kalyanpur, 2001 \cite{Kalyanpur2001} they simply assigned the highest fitness score to the ghost that actually caught Pac-Man.
 
-Additionally in the research of Gallagher and Ledwich, 2007 \cite{Gallagher2007}, they calculate the fitness based upon some average amount of points in a game of Pac-man in some averaged percentage over several generations.
+Additionally in the research of Gallagher and Ledwich, 2007 \cite{Gallagher2007}, they calculate the fitness based upon some average amount of points in a game of Pac-Man in some averaged percentage over several generations.
 
 As there are no conclusive outcome as to how one might access player performance, there are several criteria which can be outlined that will make a selection of possible player performance criteria possible.
 
 \begin{itemize}
 \item Game parameters.\\
 Such as points acquisition and successful completion of objectives or failures of not completing said objectives.
-\item method of conduction.\\
-How the actual completions or failures are conducted. Time spent on up till completion or failure and the general method of attaining such results. Examples are, what directions was utilized, when did specific actions or choices occur. A general appraisal of the method to reach any specified goal.
+\item Method of conduction.\\
+How the actual completions or failures are conducted. Time spent up until completion or failure and the general method of attaining such results. Examples are, what directions were utilized, when did specific actions or choices occur. A general appraisal of the method to reach any specified goal.
 \end{itemize}
 
 Therefore, a specification of player performance will be decided, in the design chapter, see section XX, based upon the chosen implementation of genetic algorithms in Pac-man.
 
-\subsubsection{performance indicating mechanics}
 
 
 
 \subsection{Genetic Algorithm(s)}\label{ssec:ga}
 
 \subsubsection{Description}
-Genetic algorithms was invented by John Holland in 1975 and is proposed as a heuristic method, which is a method to learn by itself based upon survival of the fittest, where it is described as a  search algorithm that uses mechanisms much like evolution to improve some solutions to a given problem. \cite[pp. 20]{Sivanandam2008}
+Genetic algorithms were invented by John Holland in 1975 and is proposed as a heuristic method, which is a method to learn by itself based upon survival of the fittest, where it is described as a  search algorithm that uses mechanisms much like evolution to improve some solutions to a given problem. \cite[pp. 20]{Sivanandam2008}
 
-The Genetic Algorithm start with a set of plausible solutions and by the use of genetic operator alterations like reproduction, crossovers and mutations \cite{Baltzer2014}, it develops a new set of better solutions compared to the previous. By repeating this process, a population will theoretically improve until a satisfying result is found to the given problem. \cite{BCS2013}
+The Genetic Algorithm starts with a set of plausible solutions and by the use of genetic operator alterations like reproduction, crossovers and mutations \cite{Baltzer2014}, it develops a new set of better solutions compared to the previous. By repeating this process, a population will theoretically improve until a satisfying result is found to the given problem. \cite{BCS2013}
 
-It is noteworthy about "satisfying results" is that we search for some better solution within a set of possible solutions, also referred to as search space. It is therefore not guaranteed to find some, if any, optimal solution to the problem but rather a/some solution(s) which can be interpreted as acceptably good. \cite[pp. 20/21]{Sivanandam2008}
+It is noteworthy about "satisfying results" is that we search for some better solution within a set of possible solutions, also referred to as search space. It is therefore not guaranteed to find some, if any, optimal solution to the problem but rather a/some solution(s) which can be interpreted as acceptable. \cite[pp. 20/21]{Sivanandam2008}
 
 
 In genetic algorithms, populations and individuals covers the terminology of the solutions and searches thereof. An individual is to be considered a single solution to the problem and the population is the number of individuals involved. \cite[pp. 39]{Sivanandam2008}
@@ -134,7 +133,7 @@ A Genetic Algorithm consists of at least five components as described by Baltzer
 \subsubsection*{Chromosome / gene representation}
 
 A representation of a population and the subordinate content, being chromosomes and genes as seen on figure \ref{fig:gene}.
-The genes functions as a string of some arbitrary length of data. A chromosome is a sequence of genes, whereof the combined chromosomes serves as the population. \cite[pp. 41]{Sivanandam2008}
+The genes function as a string of some arbitrary length of data. A chromosome is a sequence of genes, where the combined chromosomes serve as the population. \cite[pp. 41]{Sivanandam2008}
 
 As mentioned above, each individual(chromosome) is a single solution to the problem at hand. The chromosomes can be considered to be \enquote{a point in the search space of candidate solutions} \cite[pp. 7]{Melanie1990} Melanie, 1990.
 
@@ -153,9 +152,9 @@ The types of encoding methods are as follows:
 \begin{itemize}
 \item Binary encoding
 \item Octal encoding
-\item hexadecimal encoding
+\item Vexadecimal encoding
 \item Permutation encoding(sequence of numbers)
-\item value encoding(string of values. numbers, letters, strings etc)
+\item Value encoding(string of values. numbers, letters, strings etc)
 \item Tree encoding(every chromosome is a tree of some objects)
 \end{itemize}
 
@@ -167,19 +166,19 @@ A population is a collection of individuals(chromosomes).
 An initial population must be created as a starting point for the algorithm. This representation of a population is chosen randomly, as there might be no prior evident solutions. Dependent on the stated problem at hand, the initialization of populations might also be carried out with some good solutions to the problem. However in most cases, the initial population is chosen at random. \cite[pp. 41/42]{Sivanandam2008}
 
 
-\subsubsection*{evaluation function(fitness)}
+\subsubsection*{Evaluation function(fitness)}
 
-In order to improve further generations, the fitness of each chromosome in the current population must be evaluated. The genetic algorithm does so by the use of a fitness function, which assign some score(fitness) to each of the chromosomes within a specific population.
-In general manners, the fitness of a given chromosome is dependent on how successively the given chromosome solved the designated problem, and is conveyed through a range of values. The better the solution, the higher the fitness score \cite[pp. 8]{Melanie1990}
+In order to improve further generations, the fitness of each chromosome in the current population must be evaluated. The genetic algorithm does so by the use of a fitness function, which assigns some score(fitness) to each of the chromosomes within a specific population.
+In general manners, the fitness of a given chromosome is dependent on how succesfully the given chromosome solved the designated problem, and is conveyed through a range of values. The better the solution, the higher the fitness score. \cite[pp. 8]{Melanie1990}
 
-How "good" the solution is, is the whole purpose of the fitness function to identify. The fitness function perform some evaluation of the acquired results and then assigns specific fitness score to that solution. How the fitness function performs the evaluation of solution is dependent on the problem itself. There are no single solutions as to how the fitness function is to be developed, but can be really be anything, that successively covers the plausible methods of evaluating the solutions. \cite[pp. 31]{Sivanandam2008}
+How "good" the solution is, is the whole purpose of the fitness function to identify. The fitness function performs some evaluation of the acquired results and then assigns a specific fitness score to that solution. How the fitness function performs the evaluation of a solution is dependent on the problem itself. There are no single solutions as to how the fitness function is to be developed, but can really be anything, that succesfully covers the plausible methods of evaluating the solutions. \cite[pp. 31]{Sivanandam2008}
 
 \subsubsection*{Genetic operators altering chromosomes(reproduction/selection, crossover and mutation.}
 
 
 Genetic operators in some of the more simple Genetic Algorithms are reproduction/selection, crossover and mutation. Melanie, 1990. \cite{Melanie1990}
 
-\textbf{reproduction/selection:} \enquote{This operator selects chromosomes in the population for reproduction. The fitter the chromosome, the more times it is likely to be selected to reproduce.} \cite[pp. 8]{Melanie1990}
+\textbf{Reproduction/selection:} \enquote{This operator selects chromosomes in the population for reproduction. The fitter the chromosome, the more times it is likely to be selected to reproduce.} \cite[pp. 8]{Melanie1990}
 The idea behind this operator is that preferences are given to the better chromosomes in the population, which is then passed on to the next generation. This is based upon the fitness score.
 
 Within the selection operator, several selection methods exists which defines how the actual selection of "best" individuals is to be conducted.
@@ -201,9 +200,8 @@ Some of the selection methods are:
 \end{itemize}
 The list is from Sivanandam, 2008 \cite[pp. 46-50]{Sivanandam2008} and Markzyk, 2004 \cite{Adam2004}.
 
-The different selection methods will not be accounted for and described in this chapter, however the appropriate selection method will be accessed in the design chapter along with descriptive reasoning and method of application of the selected method(s), or combination of such.
+The different selection methods will not be accounted for and described in this chapter, however the appropriate selection method will be addressed in the design chapter along with descriptive reasoning and method of application of the selected method(s), or combination of such.
 
-\textbf{Crossover:} \enquote{This operator randomly chooses a locus and exchange the subsequences before and after that locus between two chromosomes to create two offspring.} \cite[pp. 8]{Melanie1990}
 
 The crossover method takes two parent solutions(chromosomes) to create new individuals, by swapping genes between two of the potentially good solutions. There exists several crossover methods, which are:
 
@@ -222,12 +220,12 @@ The crossover method takes two parent solutions(chromosomes) to create new indiv
 \end{itemize}
 The list is from Sivanandam, 2008 \cite[pp. 50-56]{Sivanandam2008}
 
-Similarly with the list of selection operators, we will not account for the crossover operator methods, but will be accessed in the design chapter with similar procedures and content.
+Similarly with the list of selection operators, we will not account for the crossover operator methods, but will be addressed in the design chapter with similar procedures and content.
 
 Additionally with the crossover operator, we can describe the crossover probability.
 The crossover probability is a parameter that describes the likelihood of crossover. It basically states how often that the crossover method will be performed.\cite[pp. 56]{Sivanandam2008}
 
-The crossover probability determines how the new generation(offspring) is altered. If there is some crossover probability then the offspring will contain genes from both of the parent chromosomes. If there is no crossover probability then the offspring will be copies of the parent chromosomes. They will be exact copies, but does not mean that they are the same.
+The crossover probability determines how the new generation (offspring) is altered. If there is some crossover probability then the offspring will contain genes from both of the parent chromosomes. If there is no crossover probability then the offspring will be copies of the parent chromosomes. They will be exact copies, but does not mean that they are the same.
 
 
 \textbf{Mutation:} \enquote{This operator randomly flips some of the bits in a chromosome.} \cite[pp. 8]{Melanie1990}
