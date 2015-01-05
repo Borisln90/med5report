@@ -1,1 +1,54 @@
 \section{Discussion} \label{sec:discussion}
+
+The following content consist of discussions concerning the general procedure of developing a prototype and evaluation of such to ultimately answer to the final problem statement. We discuss if we are indeed able to answer to the final problem statement, and specifies further research areas. 
+
+
+The final problem reads:
+
+Is it possible to create an implementation of a video game AI, which alternates between the various states of a finite state machine, to match the player's performance through the use of a genetic algorithm?
+
+
+
+In order to successfully answer to the final problem statement, there are several aspects that must be described separately.
+
+The matching of player performance is, with the current implementation, assessed by evaluating the attained amount of point of each test participant over each generation. We state the the player performance is matched if the test results show that point acquired in one level/generation does not exceed the previous level/generation played. Thus the point obtained in the proceeding level must be either similar or lower.
+In the evaluation(See section XX(evaluation)), we find through the use of deltascores and points obtained by the test participants within each generation/level and visualisations of such data through boxplots, that there indeed are changes in the scores over several generations, both increasing and decreasing amount of points.
+
+Thus by the definition of matching player performance we were unable to create an implementation of a video game AI, which alternates between the various states of a finite state machine, to match the player's performance through the use of a genetic algorithm.
+
+We do however state in the FPS that we ask if it is indeed possible to do so. In order to make such claim, that it is indeed possible to create such implementation - there are several aspects that must be discussed.
+
+\textbf{Matching player performance}
+
+With the current method of assessing player performance, we are only evaluating whether or not the implemented genetic algorithm, in some manner, is somewhat able to keep the player points obtained in the proceeding levels played by the same test participant, equal to the previous attained points or lower.
+
+
+theoretically, this method only implies that the genetic algorithm will try to decrease the player score as much as possible.
+
+Thus if the implementation of the genetic algorithm was done accordingly with the following definition of matching player performance, we might have gotten other results that could be used to successfully answer to the final problem statement.
+
+Player performance will be considered matched if:
+
+A threshold value of desired attainable points will be determined.
+
+Test participants,with a varying skill level, will after playing X games whereof each game represent a new generation, attain an equal score. The score must attained be the score as specified as the threshold.
+
+ Thus if the points attained by the test participants are higher than the threshold, the genetic algorithm will aim to decrease the player score. However if the player obtain a lesser amount than the threshold, the genetic algorithm will aim to allow a rise in the point obtained up till the threshold.
+ 
+ \textbf{Alternation between the various states of a finite state machine}
+ 
+Also, to successfully answer to the final problem statement, our implemented prototype is utilizing some modified version of Pac-man, with some implemented modified modes and modified behaviours. The implemented states of a finite state machine is one single solution and does only represent a single implementation whereof the problem statement asks in general if it is indeed possible to implement to match the player performance.
+ 
+Theoretically, if the prototype was successfully implemented and the alteration between the various states of the finite state machine was proven as efficient as possible, we would be able to identify whether or not the described alterations of the AI would actually be sufficient to match the player's performance. No such claim can be proven with the current prototype, as it only represents a single solution, with a single type of modified modes and behaviours which, additionally, was unable to match the current specified, matching of player performance.
+
+\textbf{Genetic Algorithm}
+
+In the genetic algorithm, as implemented into out prototype, there are several decisions and methods that represent only one single solution as a prototype to help answer to the FPS.
+
+A genetic algorithm is developed in accordance with some problem definition. Thus the GA is utilized to find some set of solutions to the given problem. In our prototype, the problem definition is described as how the GA can decrease the amount of points that a player obtains in our modified version of Pac-man.  Also, the population size, gene encoding, fitness function and fitness score representation along with crossover, selection and mutation function along with the appropriate probabilities of such represents a single solution to how one might try to successfully answer to the FPS(See section  XX for a list of genetic algorithm requirements.
+
+ 
+
+\textbf{Final remarks}
+Thus to elaborate upon the possibility of successfully answer to the final problem statement we are unable to claim that is is possible with our implementation and evaluation. Though, as this only represent a single type of solution, where some modifications might alter the results, we cannot state that is is not possible to create an implementation of a video game AI, which alternates between the various states of a finite state machine, to match the player's performance through the use of a genetic algorithm.
+
