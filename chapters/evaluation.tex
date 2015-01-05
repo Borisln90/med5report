@@ -38,7 +38,7 @@ The statistical test method and output data evaluation thereof will be conducted
 \begin{itemize}
 \item Collected data: Scores
 
-The data collected will consists of points(points collected throughout a single level played in the prototype) which can be categorized as interval data.
+The data collected will consists of points(points collected throughout a single level played in the prototype) which can be categorized as ordinal data. This is due to the data being numerical where some ranking of the data values can be put into order.
 \item Independent variable(s)
 
 One independent variable will be modified, and is the alternation between the various states of the finite state machine in the prototype, as specified in the final problem statement.(See section XX)
@@ -48,9 +48,9 @@ The experiment is considered of type experimental, as we look for differences be
 \item repeated measures
 
 Each participant will participate in each condition of the experiment and provide scores to each, and the design is therefore considered a repeated measure design.
-\item Parametric data
+\item Non Parametric data
 
-The data is considered parametric as the collected data is of type interval data. as described by Field and Hole, 2003 \cite[pp. 269]{Field2003}, the variation of scores in each condition of the test is somewhat comparable.
+The data is considered non-parametric as the collected data is of type ordinal data.
 
 \end{itemize}
 
@@ -158,7 +158,7 @@ End the testing by informing the test participant the game is terminated.
 
 \newpage
 \subsection{Test Data and Results}
-The following content is the combined data collected from the conducted test accompanied by a description thereof. discussion and interpretation of the content will be conducted in section \ref{resulteval}, result evaluation.
+The following content is the combined data collected from the conducted test accompanied by a description thereof. discussion and interpretation of the content will be conducted in evaluation discussion(See section \ref{resulteval}).
 
 \subsubsection{Main test data}
 The acquired main test data consist of the following content(See figure \ref{fig:testdata} for data snippet).
@@ -296,27 +296,98 @@ Figure \ref{fig:question5} represent the answer distribution on a scale from 1-1
 \newpage
 \subsection{Result evaluation} \label{resulteval}
 
+As specified in the method section(See section \ref{sec:eval_method}) we state that the independent variable is the alternation between the various states of the finite state machine.
+
+The dependant variable is amount of points attained in each generation/level, whereof each condition is repeated by the same test participant.
+
+also specified is the player performance which is  considered matched if the attained score(points) of each game/generation of one single test participant is either equal or lower than the previous attained score(points acquired).
+
+In order to discuss whether or not the attained score is equal or less than the previous attained score(points acquired) we can construct a visualisation of the collected output data which is the points attained by the test participants in our repeated measured test design.
+As the data type is non-parametric, a boxplot can be used to visualise the distribution.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5]{point_boxplot.jpg}
+\includegraphics[scale=0.6]{point_boxplot.jpg}
 \caption{point distribution boxplot}
 \label{fig:boxplot_points}
 \end{figure}
 
+\subsubsection{point data distribution: Boxplot visualisation}
+
+The boxplot seen on figure \ref{fig:boxplot_points} visualise the distribution of points for each generation, and makes it possible to account for the variance.
+
+From the visualisation of point distribution the following can be observed:
+
+The median, as the value representing the separation of the higher and lower half of the data distribution, shows a different median value in each of the generations. It can be observed that the median increases 4 times and decreases 5 times, but within a range of values somewhat ranging from 1000 points to 2100 points approximately.
+
+The outliners represent the range of points attained in each generation and specify the highest and smallest amount of points collected within each generation from all the test participants in one single generation.
+
+The first generation outliner shows the highest attained score of approximately 10000 points and the lowest being somewhat close to 3-400 points. The bottom outliner is observably very similar in each generation. From generation 2-10 a noticeable  decrease in the range of points collected in the following generations occur, much unlike generation 1.
+
+The distribution of data is also indicated by the observed quartiles and range of them. The quartiles indicates that 50 percent of the data lies within the quartiles. Observably is the quartile range. From generation 2-10 the range of values both for the outliners but also the quartiles, illustrates that the data distribution is much smaller compared to the first generation. Between generation 2-10 there is a much smaller diversity in the range of both outliners and quartiles.
+
+Lastly the skewness of the median compared to the placement within each quartile indicates that 25 percent of the test participant is within a smaller range of distribution compared to the 25 percent above the median, which has a wider range of distribution. Thus a larger amount of test participants(25 percent) attained a somewhat similar score below the median, compared to the distribution above the median.
+
+\subsubsection{Delta score data distribution: box plot visualisation}
+
+in addition to the visualisation of point distribution over 10 generations, we can also assess the amount of difference between the points collected in each generation. This will make it possible to observe if there is some difference in the points collected over each of the generations, but also specify how much difference of points collected there is over each generation. Thus it will be possible to evaluate whether or not the points collected is equal, increased or lowered compared to the previous attained scores over 10 generations and how much.
+
+The delta score is calculated by conducting the following calculations:
+
+[Generation 1 points] -[generation 2 points]
+
+[generation 2 points] - [generation 3 points]...[]
+
+The delta score is calculated both for absolute values, meaning that we only look for the positive amount of difference, and for accurate values, meaning that also negative values are specified.
+
+Thus it will be possible to observe the amount of difference in points obtained over the generations, but also whether or not the difference is positive or negative.
+
+Figure \ref{fig:deltascore_positive} illustrates the positive deltascores of the amount of difference between the points acquired for each of the test participants over each of the 10 generations.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5]{deltascore_absolutes_boxplot.jpg}
-\caption{Absolutes: Deltascore boxplot}
-\label{fig:question5}
+\includegraphics[scale=0.6]{deltascore_positive.jpg}
+\caption{deltascores with positive amounts}
+\label{fig:deltascore_positive}
 \end{figure}
+
+
+Figure \ref{fig:deltascore_negative} illustrates the positive and negative deltascores of the amount of difference between the points acquired for each of the test participants over each of the 10 generations. Thus also indicating the amount of difference is either positive or negative.
+
+The following boxplots figures illustrates the amount of variance of the points collected. Figure \ref{fig:delta_positive} illustrates the distribution of postive amounts of variance. Figure \ref{fig:delta_negative} illustrates the distribution of both positive and negative amounts of variance.
+
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5]{deltascore_includeNegative_boxplot.jpg}
-\caption{Deltascore boxplot}
-\label{fig:question5}
+\includegraphics[scale=0.6]{deltascore_negative.jpg}
+\caption{deltascores with positive and negative amounts: Boxplot}
+\label{fig:deltascore_negative}
 \end{figure}
 
 
+
+
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{deltascore_absolutes_boxplot.jpg}
+\caption{Deltascores with positive amounts}
+\label{fig:delta_positive}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{deltascore_includeNegative_boxplot.jpg}
+\caption{Deltascores with positive and negative amounts: Boxplot}
+\label{fig:delta_negative}
+\end{figure}
+
+Boxplot figure \ref{fig:delta_positive} illustrates that there is an large change in the points attained from generation 1 to generation 2 as indicated by the outliners in generation 1. Thus it means that a player had a score, either low or high in generation 1, and increased or decreased the score by 8000 points in the next generation.
+
+From generation 2 to generation 9, the quartiles and medians show that the amount of variance in points is occurring. The quartiles show that the distribution of 50  percent of the points attained is ranging from approximately 300-2000 points. Additionally with the boxplot, it can be observed that a skewing of the median in the quartiles of ex. generation 7 that 25 percent of the distribution, in the amount of variance, is somewhat between 600-1000.
+
+In figure \ref{fig:delta_negative} we can observe similar data as in figure \ref{fig:delta_positive}, but with the specified negative or positive amount of variance. Thus it is observable that the distribution of variance is not only negative, but also positive. A positive amount of variance can be observed 5 times, and a negative amount of variance is observed 3 times over the generations.
+
+\newpage
 \subsection{Evaluation discussion}
