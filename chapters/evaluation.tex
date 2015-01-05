@@ -2,7 +2,7 @@
 The purpose of the evaluation is to establish knowledge concerning the possibility of creating a video game AI that matches the player's performance through the use of a genetic algorithm; as stated in the final problem statement.(See section XX)
 
 
-\subsection{Method}
+\subsection{Method} \label{sec:eval_method}
 the method of testing and evaluating said results will be constructed in the following manner.
 
 Test subjects will be asked to play several games/levels of the product prototype whereof each game represent a new improved generation of our genetic algorithm. The general purpose is to account for the effectiveness of our genetic algorithm and the used method of alternations between the various states of the finite state machine, to evaluate whether our genetic algorithm is actually matching player performance.
@@ -290,14 +290,33 @@ Figure \ref{fig:question2} represent the answer distribution on a scale from 1-1
 \end{figure}
 
 Figure \ref{fig:question5} represent the answer distribution on a scale from 1-10.
-
-
 \end{itemize} 
 
+
+\newpage
 \subsection{Result evaluation} \label{resulteval}
 
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{point_boxplot.jpg}
+\caption{point distribution boxplot}
+\label{fig:boxplot_points}
+\end{figure}
 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{deltascore_absolutes_boxplot.jpg}
+\caption{Absolutes: Deltascore boxplot}
+\label{fig:question5}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{deltascore_includeNegative_boxplot.jpg}
+\caption{Deltascore boxplot}
+\label{fig:question5}
+\end{figure}
 
 
 \subsection{Evaluation discussion}
