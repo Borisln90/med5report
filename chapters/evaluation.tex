@@ -1,5 +1,5 @@
 \section{Evaluation} \label{sec:evaluation}
-The purpose of the evaluation is to establish knowledge concerning the possibility of creating a video game AI that matches the player's performance through the use of a genetic algorithm; as stated in the final problem statement.(See section XX)
+The purpose of the evaluation is to establish knowledge concerning the possibility of creating a video game AI that matches the player's performance through the use of a genetic algorithm; as stated in the final problem statement.(See section \ref{sec:finalproblemstatement})
 
 
 \subsection{Method} \label{sec:eval_method}
@@ -41,7 +41,7 @@ The statistical test method and output data evaluation thereof will be conducted
 The data collected will consists of points(points collected throughout a single level played in the prototype) which can be categorized as ordinal data. This is due to the data being numerical where some ranking of the data values can be put into order.
 \item Independent variable(s)
 
-One independent variable will be modified, and is the alternation between the various states of the finite state machine in the prototype, as specified in the final problem statement.(See section XX)
+One independent variable will be modified, and is the alternation between the various states of the finite state machine in the prototype, as specified in the final problem statement.(See section \ref{sec:finalproblemstatement})
 \item experimental design
 
 The experiment is considered of type experimental, as we look for differences between conditions which is the alternations of the independent variable.
@@ -57,18 +57,18 @@ The data is considered non-parametric as the collected data is of type ordinal d
 \input{chapters/evaluation/pretest.tex}
 
 \subsection{Procedure}
-Taylor-Powell1998
+
 \subsubsection{Questionnaire}
 There is a possibility of collecting biased data if the test subjects perform on the same skill level.
 If the test subjects happen to be at the same skill level, we would not be able to determinate if our GA is working properly, making them equally good, or if they are equal in skill. To avoid this bias we wish to collect quantitative data in relation to how much our population differs from each other based on the test subject's opinion of their own abilities in games.
 
-The quantitative information will be collected through a questionnaire that has been designed after the guidelines by Ellen Powell's  \cite{Taylor-Powell1998} Taking these guidelines into consideration we have designed 5 questions that will ask the test subject to reflect on experience as well as place them on a likert scale before conducting the test. The purpose of the 5 questions will be described, but not stated in this report as they can be found in the appendix (XX).
+The quantitative information will be collected through a questionnaire that has been designed after the guidelines by Ellen Powell's  \cite{Taylor-Powell1998} Taking these guidelines into consideration we have designed 5 questions that will ask the test subject to reflect on experience as well as place them on a likert scale before conducting the test. The purpose of the 5 questions will be described, but not stated in this report as they can be found in the appendix (see \ref{sec:question}).
 
 Question 1 is a general question that is designed to get the test subjects overall ability in games. We would like to know if we are dealing with experienced gamers who understand a games interaction and can defeat an expected difficulty. According to Powell's guidelines, a negative response option should always be provided, in case the subject is inexperienced in games and do not play games at all. Because of this, we have the option "Never" the test subjects can answer, or if they feel they have more expertise, can they answer between "Sometime", "Often" and "More often".
 
 Question 2 asks the test subject to rate their current gaming skill, this gives us an idea of what level the test subject prefer playing. In the previous question, the test subject may have answered "Sometimes" however performs exceptionally in games with which we can consider them good at defeating a games difficulty.
 
-As described earlier in section (XX) our game is not a copy of the original Pac-man, however there is similarities with the classic arcade game and we will therefore refer the following questions to this specific game in order to help us explain our GA for the test subjects.
+As described earlier our game is not a copy of the original Pac-man, however there is similarities with the classic arcade game and we will therefore refer the following questions to this specific game in order to help us explain our GA for the test subjects.
 
 Question 3 will be considered a control question. We cannot expect all test subjects knowing what Pac-Man is, and will therefore have to ensure us they have a descent knowledge of the game. The gameplay will be explained no matter what, but if answering no, will the test observes go more into details about the gameplay. If answering yes will the test participant have to answering question 4 as well.
 
@@ -82,7 +82,7 @@ These questions have been designed to help us illustrate a distribution of the s
 Testing found place on several location and was conducted on 21 participants in an estimated time of 30 minutes each.
 It makes use of a convenience sampling that does not prefer a specific population, but test on volunteering participant that are readily available. \cite{Exploarable2009} In our FPS is there no current population required, and we make therefore use of this sampling method. The testing happened December 2014, in the following locations:
 \begin{itemize}
-\item 15 of the test found place in the test participant?s home
+\item 15 of the test found place in the test participant's home
 \item 1 in a library
 \item 5 at AAU University
  \end{itemize}
@@ -165,7 +165,7 @@ The following content is the combined data collected from the conducted test acc
 \subsubsection{Main test data}
 The acquired main test data consist of the following content(See figure \ref{fig:testdata} for data snippet).
 
-The entire list of recorded data can be accessed in the digital appendix.(See appendix XX)
+The entire list of recorded data can be accessed in the digital appendix.
 
 \begin{figure}[!htbp]
 \centering
@@ -197,11 +197,11 @@ Represent whether or not the test participant won the generation/level in a bool
 Ghost 1-4 mode represent each of the four ghosts.
 
 
-IsChasing, isRandom and isScattering represent the ghost Modes.(See section XX for mode description)
+IsChasing, isRandom and isScattering represent the ghost Modes.(See section \ref{ssec:modesCycle} for mode description)
 
 The percentages represent the length that each mode is active.
 
-the order(sequence of modes) of each ghosts represent the order that the MonsterModes are switched between.(See section XX for documentation) Changing the order of the modes will change the time they are active during play or simulation in the prototype.
+the order(sequence of modes) of each ghosts represent the order that the MonsterModes are switched between.(See section \ref{ssec:modesCycle} for documentation) Changing the order of the modes will change the time they are active during play or simulation in the prototype.
 \end{itemize}
 
 \newpage

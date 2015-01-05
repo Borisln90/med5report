@@ -4,11 +4,11 @@
 For implementing our genetic algorithm we have used an open-source clone of pac-man made in C\# by Brian Bender~\footnote{Pac-man C\# implementation:~\url{https://www.planet-source-code.com/vb/scripts/ShowCode.asp?txtCodeId=5669&lngWId=10}}.
 
 \subsection{Modes}
-The open-source version of pac-man, which we are using as a base for the implementation, did not include ghost behaviour modes (XX see Design).
+The open-source version of pac-man, which we are using as a base for the implementation, did not include ghost behaviour modes (see~\ref{ssec:design_modes}).
 The ghosts do not actively chase pacman or scatter to individual corners as in the original pac-man.
 They move by randomly selecting a point from a list of moveable points.
 
-\begin{lstlisting}[caption=XXimage, label=lst:imp1]
+\begin{lstlisting}[caption=random movement, label=lst:imp1]
 if (currentMode == Cycle.MonsterMode.IsRandom) {
 	ArrayList pts = GetNextPossibleCoordinates(_direction, _currentLocation);
 	int iSelected = _rnd.Next(1, pts.Count + 1);
@@ -714,12 +714,12 @@ For each simulation we store a Logger object in a List. This is simply to keep t
 As we store a Chromosome object in each Logger, we can directly match it using the unique ID-string given by the GAF.
 
 \subsubsection*{Genetic Algorithm Operators}
-Some operators are pre-made and come as part of the GAF. Although it is a possibility to create your own operators, our research indicates that the operators included will suit our needsXXREF.The operators that we have in use are Elite~\footnote{\url{http://aiframeworks.net/microsites/gaf/html/9a476085-c561-dc6d-f30e-69e720795e1c.htm}}, SwapMutate~\footnote{\url{http://aiframeworks.net/microsites/gaf/html/7677aa9e-d365-3e26-cf64-376f994b1f45.htm}} and CrossOver~\footnote{\url{http://aiframeworks.net/microsites/gaf/html/49d4e899-e9a0-473e-815a-e2b3a35d2465.htm}}
+Some operators are pre-made and come as part of the GAF. Although it is a possibility to create your own operators, our research indicates that the operators included will suit our needs (see \ref{ssub:population}).The operators that we have in use are Elite~\footnote{\url{http://aiframeworks.net/microsites/gaf/html/9a476085-c561-dc6d-f30e-69e720795e1c.htm}}, SwapMutate~\footnote{\url{http://aiframeworks.net/microsites/gaf/html/7677aa9e-d365-3e26-cf64-376f994b1f45.htm}} and CrossOver~\footnote{\url{http://aiframeworks.net/microsites/gaf/html/49d4e899-e9a0-473e-815a-e2b3a35d2465.htm}}
 
-The parameters chosen for each operator are inspired by “The Travelling Salesman” example, and these values correspond with our research for each operator XXREF.
+The parameters chosen for each operator are inspired by “The Travelling Salesman” example, and these values correspond with our research for each operator (see \ref{ssub:population}).
 
 
-We have created a class diagram which shows the inheritance and interfacing between all the classes, to help give a better understanding of how the prototype is working. The class diagram can also be seen in expanded form in the appendix, where we have all the members of each class visible. XXRef til appendix
+We have created a class diagram which shows the inheritance and interfacing between all the classes, to help give a better understanding of how the prototype is working. The class diagram can also be seen in expanded form in the appendix, where we have all the members of each class visible.
 
 \begin{figure}[!htbp]
 	\centering

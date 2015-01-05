@@ -1,3 +1,4 @@
+%!TEX root = ../main.tex
 \section{Design} \label{sec:design}
 
 This chapter will set focus on the research from the analysis to create a blueprint of our desired product that will fulfill the demands from our list of requirements. The prototype is going to be split into three different parts.
@@ -15,12 +16,12 @@ New modes for the ghosts will be created that can be controlled by a finite stat
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[scale=0.5]{D1.png}
+\includegraphics[width=0.5\textwidth]{D1.png}
 \caption{ Design Plan }
 \label{fig:DesignPlan}
 \end{figure}
 
-\subsection{Pacman Modes}
+\subsection{Pacman Modes}\label{ssec:design_modes}
 
 The original Pacman in its current state is not optimized for the use of a genetic algorithm. That is why it has to be tailored into a finite state machine that can be linked with the genetic algorithm and change the values that is being sent as input. We want to base this finite state machine on the different ghost modes. That means the modes are going to be switched during the gameplay and by that each ghost will no longer have a specific role in the game. An example could be that a ghost would change mode every 10 seconds or every 1000 frames and activate either chase, scatter or random. Each ghosts would then have their own chance of activating the different modes, an example could be a more aggressive ghost with high chase value like this:
 
@@ -173,7 +174,7 @@ This method works by taking one small part of a chromosome A and swaps that into
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[scale=0.5]{D10.png}
+\includegraphics[scale=0.5]{D11.png}
 \caption{ Single Point Crossover }
 \label{fig:Crossover}
 \end{figure}
@@ -186,7 +187,7 @@ As mutation is there to create small random changes in the genes we want it to b
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[scale=0.5]{D11.png}
+\includegraphics[scale=0.5]{D12.png}
 \caption{ UML }
 \label{fig:UML}
 \end{figure}
