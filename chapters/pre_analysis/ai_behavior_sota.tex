@@ -1,19 +1,19 @@
 %!TEX root = ../../main.tex
 
 \subsubsection{Original AI modes} \label{sec:aimodes}
-The four enemies in Pac-Man may appear to move in a random fashion but each of the four ghosts actually move in a deterministic fashion~\autocite{Pittman2011} They all share the same behavior modes that they can switch between; \textbf{Chase}, \textbf{scatter}, and \textbf{frightened} mode.
+The four enemies in Pac-Man may appear to move in a random fashion, but each of the four ghosts actually move in a deterministic fashion~\autocite{Pittman2011} They all share the same behavior modes that they can switch between; \textbf{Chase}, \textbf{Scatter}, and \textbf{Frightened} -mode.
 
 \emph{Chase mode} is, in all its simplicity, about chasing the Pac-Man down through the maze.
 
-In \emph{scatter mode}, the ghosts forgets the Pac-Man and heads to their corner of the maze. This mode is only be active for a few seconds before they revert to chase mode.
+In \emph{scatter mode}, the ghosts forget Pac-Man and head to one of the four corners of the maze. This mode is only active for a few seconds before they revert to chase mode.
 
-When the Pac-Man eats one of the four special pellets in the maze, the ghosts go into \emph{frightened mode}. In Frightened mode, the ghosts will turn dark blue, turn around and aimlessly wander the maze for a few seconds before they return to their previous mode. In frightened mode the ghosts become vulnerable (indicated by the dark blue color) and it is possible for the Pac-Man to eat the ghosts for extra points. When a ghost is eaten it will return to the box in the middle of the maze as well as resume its previous mode.
+When Pac-Man eats one of the four special pellets in the maze, the ghosts go into \emph{frightened mode}. In Frightened mode, the ghosts will turn dark blue, turn around and aimlessly wander the maze for a few seconds before they return to their previous mode. In frightened mode the ghosts become vulnerable (indicated by the dark blue color) and it is possible for Pac-Man to eat the ghosts for extra points. When a ghost is eaten it will return to the box in the middle of the maze as well as resume its previous mode.
 
 The effects of frightened mode is different depending on how far in the game the player is; as the levels progress the time spend in fright mode is shortened until they no longer become frightened (They still lose their target and wander aimlessly).
 
-These modes are part of what is called a finite state machine~\autocite[pp.44]{Buckland2005}~\autocite{Kehoe2009}.
-A finite state machine is one of the most basic concepts in video game AI programming. The machine consists of a finite set of fixed states that it can occupy(In the case of a light switch those states would be ON and OFF) at any given moment in time. It can be defined like this:
+These modes are part of what is called a \emph{Finite State Machine}~\autocite[pp.44]{Buckland2005}~\autocite{Kehoe2009}.
+A finite state machine is one of the most basic concepts in video game AI programming. The machine consists of a finite set of fixed states that it can occupy(In the case of a light switch those states would be ON and OFF) at any given moment in time. It can be defined as such:
 
 \blockquote[\autocite{Buckland2005}]{\enquote{A finite state machine is a device, or a model of a device, which has a finite number of states it can be in at any given time and can operate on input to either make transitions from one state to another or to cause an output or action to take place. A finite state machine can only be in one state at any moment in time.}}
 
-The finite states in Pac-Man are the modes mentioned above and the transition between these modes~\autocite[pp.45]{Buckland2005}.
+The finite states in Pac-Man are the modes mentioned above and the transition between these modes.~\autocite[pp.45]{Buckland2005}.
