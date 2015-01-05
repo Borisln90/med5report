@@ -1,10 +1,10 @@
 %!TEX root = ../../main.tex
 
-\subsubsection{AI Pathfinding}
-The ghost AI of the original Pac-Man is based on a single pathfinding algorithm which all the modes previously discussed in the investigation utilize \cite{Pittman2011}.
+\subsubsection{AI Pathfinding}\label{ssub:pathfinding}
+The ghost AI of the original Pac-Man is based on a single pathfinding algorithm which all the modes previously discussed in the investigation utilizes \cite{Pittman2011}.
 In order to get a better understanding of how these modes work we need to look at this pathfinding mechanism.
 
-The maze is made up of tiles in a grid.
+The maze is split up in tiles in a grid.
 This grid has a size of 28 x 36 tiles, this includes everything on the screen including score counters, and life count.
 The size of the individual tiles depends on the resolution of the game space.
 In the case of the origin Pac-Man the screen size was 224 x 288 pixels.
@@ -20,13 +20,13 @@ Tiles outside the maze and tiles with pieces of wall within them, while still ti
 \label{fig:Pacman_visible_space}
 \end{figure}
 
-While the ghosts can only move along a path using legal tiles, their target tile can be anywhere on the grid.
+While the ghost can only move along a path using legal tiles, the ghosts target tile can be anywhere on the grid.
 In chase mode the target tile will be somewhere near the Pac-Man (depending on the ghost in question), and in scatter mode where the ghost will move towards its designated corner of the maze.
 The target tile the ghost will go to when in scatter mode is fixed outside of the maze to ensure that the ghost will never get to it, resulting in the ghost circulating in the area closest to the fixed target until it has a new target.
 Another fixed tile is the one in the ghost-one in the middle of the screen.
 This is activated when the ghost has been eaten by the Pac-Man and is sent back to the pen.
 
-In Figure \ref{fig:Pacman_visible_space} we can see the grid laid out over the screen of Pac-Man. The grey tiles are considered walkable and the tiles that the pathfinding works with. The eatable pellets are the white dots in the middle of those tiles.
+In Figure \ref{fig:Pacman_visible_space} we can see the grid laid out over the screen of Pac-Man. The grey tiles are considered legal and the tiles that the pathfinding works with. The eatable pellets are the white dots in the middle of those tiles.
 
 The bulk of the pathfinding happens when the ghost reaches an intersection in the maze.
 When the ghost is one tile away from an intersection, it will adjust its direction.

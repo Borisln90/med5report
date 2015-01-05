@@ -11,9 +11,9 @@
             twoside,
             left=1.5in,
             right=1.0in,
-            textheight=9in, 
+            textheight=9in,
             headheight=14pt]{geometry}
-            
+
 % Packages
 % Locale settings
 \usepackage[utf8]{inputenc}
@@ -23,7 +23,7 @@
 \usepackage{setspace} % text spacing
 
 % We want clickable links in the pdf. Hide borders.
-\usepackage[pdfborder={0 0 0}]{hyperref} 
+\usepackage[pdfborder={0 0 0}]{hyperref}
 
 % Dummy text
 \usepackage{lipsum}
@@ -48,7 +48,7 @@
 \usepackage{appendix}
 \usepackage[final]{pdfpages}
 
-% Biblatex! 
+% Biblatex!
 \usepackage[backend=biber, style=ieee]{biblatex}
 \addbibresource{library.bib}
 % \DeclareLanguageMapping{english}{english-apa} % Only needed for apa style
@@ -58,13 +58,38 @@
 \usepackage{algorithmic}
 
 % Styles
-\usepackage{fancyhdr} % Cool headers 
+\usepackage{fancyhdr} % Cool headers
 \usepackage[labelfont=bf]{caption} % Bold labels for float captions
 
 % Code blocks
 \usepackage{listings}
+\usepackage{courier}
+\definecolor{bluekeywords}{rgb}{0,0,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{redstrings}{rgb}{0.64,0.08,0.08}
+\definecolor{xmlcomments}{rgb}{0.5,0.5,0.5}
+\definecolor{types}{rgb}{0.17,0.57,0.68}
 
-% Float management and float barrier 
+\lstset{language=[Sharp]C,
+captionpos=b,
+%numbers=left,
+%numberstyle=\tiny,
+frame=lines,
+showspaces=false,
+showtabs=false,
+breaklines=true,
+showstringspaces=false,
+breakatwhitespace=true,
+escapeinside={(*@}{@*)},
+commentstyle=\color{greencomments},
+morekeywords={partial, var, value, get, set},
+keywordstyle=\color{bluekeywords},
+stringstyle=\color{redstrings},
+basicstyle=\footnotesize\ttfamily,
+framextopmargin=7pt
+}
+
+% Float management and float barrier
 \usepackage[section]{placeins}
 
 % Space between paragraphs based on locale. Much cleaner then \bigskip.
@@ -72,7 +97,7 @@
 
 
 % Commands
-% Allows for linebreak in table cells. 
+% Allows for linebreak in table cells.
 % \specialcell{line one \\ line two}
 \newcommand{\specialcell}[2][c]{%
     \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
@@ -83,7 +108,7 @@
 \date{\today}
 
 % Only include these chapters. For when you only work on one chapter
-%\includeonly{./chapters/introduction} 
+%\includeonly{./chapters/introduction}
 
 
 \begin{document}
@@ -91,9 +116,9 @@
 %------------------------------------------------------------------------------
 % TOP MATTER
 %------------------------------------------------------------------------------
-\fancyhf{} % Reset all pagestyles 
-\pagestyle{plain} % Load plain pagestyle 
-\pagenumbering{roman} % Roman pagenumbering for top matter 
+\fancyhf{} % Reset all pagestyles
+\pagestyle{plain} % Load plain pagestyle
+\pagenumbering{roman} % Roman pagenumbering for top matter
 
 \maketitle
 \include{./chapters/readersguide}
@@ -104,7 +129,7 @@
 
 \tableofcontents
 
-\clearpage 
+\clearpage
 %------------------------------------------------------------------------------
 % MAINMATTER
 %------------------------------------------------------------------------------
@@ -113,7 +138,7 @@
 
 % Used for section name in page header.
 % Reset by \pagestyle{} so define here.
-\renewcommand{\sectionmark}[1]{\markboth{#1}{}} 
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
 \fancyhead[RE, LO]{Chapter \thesection . \emph{\nouppercase{\leftmark}}}
 \fancyhead[RO, LE]{\thepage}
 \pagenumbering{arabic} % Back to normal page numbering. Resets counter
