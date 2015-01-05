@@ -10,7 +10,7 @@ This chapter will set focus on the research from the analysis to create a bluepr
 
 The prototype should work as following:
 
-New modes for the ghosts will be created that can be controlled by a finite state machine. This will create a mode cycle that will be able to be manipulated by a genetic algorithm. The goal is then to create a simulation system that can create simulations with new data sets for a fitness function to evaluate in the genetic algorithm. Then return the mode cycle that match the player’s performance for next game of pacman (See Fig. Design Plan). 
+New modes for the ghosts will be created that can be controlled by a finite state machine. This will create a mode cycle that will be able to be manipulated by a genetic algorithm. The goal is then to create a simulation system that can create simulations with new data sets for a fitness function to evaluate in the genetic algorithm. Then return the mode cycle that match the player’s performance for next game of pacman (See Fig. Design Plan).
 
 
 \begin{figure}[!htbp]
@@ -37,7 +37,7 @@ Idle - 10\%
 The point system is based on the original pacman. Each dot will grant points which will make sure that you will have a minimum score if completing the level. The energizers won’t directly give you points, in order to obtain points in energized mode the ghosts has to be eaten by pacman. Fruits will spawn around the level and grant a small amount of points. If the player wants to increase the amount of points for the level the player has to fulfill these objectives. All of these points will be used in the evaluation score.
 
 
-The new modes will be as follows: 
+The new modes will be as follows:
 
 \subsubsection{Chase}
 The chase-mode will be based on Blinky from the original pacman. It will be modified in a few ways to make it more optimal and adjust it so it will not make problems with the new mode cycle. An A* (A-Star) Pathfinder will be used as a pathfinding method. It is a search algorithm which always tracks the fastest way to pacman by the use of calculating coordinates (also known as Nodes) from the ghost and towards its destination. The Elroy mode will be removed since it adds an additional difficulty factor with the increased speed of the ghost. It would also create complications with the new mode cycle system, if chase-mode was engaged and all other modes were to be ignored.
@@ -64,7 +64,7 @@ The scatter-mode will act as in the original pacman. The only change will be tha
 
 
 \subsubsection{Random and Frightened}
-The random and frightened mode will both use the same movement system. When a ghost meets an intersection in the maze it will then make a random decision about which way to go. Obviously the ghost won’t be allowed to move back in the direction which it came. In frightened mode the ghost keeps the same system but will also keep in mind where in the maze pacman is located and try to avoid going in direction which pacman is located. 
+The random and frightened mode will both use the same movement system. When a ghost meets an intersection in the maze it will then make a random decision about which way to go. Obviously the ghost won’t be allowed to move back in the direction which it came. In frightened mode the ghost keeps the same system but will also keep in mind where in the maze pacman is located and try to avoid going in direction which pacman is located.
 
 
 \begin{figure}[!htbp]
@@ -86,7 +86,7 @@ As mentioned before an A* Pathfinder will be the pathfinder choice, this will re
 
 The A* Pathfinder work as following:
 
-As seen on A* Fig (1) a grid is applied over the game maze. Since the original pacman also is a grid based game this implementation will be good match for the game. The grid is informed about which coordinates that are able to be used as a path. These coordinates will be marked as true, and the rest, which in our case are walls, will be marked as false. A start point, in our case the ghost, and an end point which is pacman is being placed on the grid. 
+As seen on A* Fig (1) a grid is applied over the game maze. Since the original pacman also is a grid based game this implementation will be good match for the game. The grid is informed about which coordinates that are able to be used as a path. These coordinates will be marked as true, and the rest, which in our case are walls, will be marked as false. A start point, in our case the ghost, and an end point which is pacman is being placed on the grid.
 
 
 \begin{figure}[!htbp]
@@ -98,7 +98,7 @@ As seen on A* Fig (1) a grid is applied over the game maze. Since the original p
 
 Every point in the grid has been giving three values which is F , G and H as seen in A* Fig (2). In this case a node is a set of coordinates.
 
-G is the length of the path from the start node to the current point. 
+G is the length of the path from the start node to the current point.
 H is the distance from the current node and until the end point.
 F is the total length of the route which it both the G and H added together.
 
@@ -111,7 +111,7 @@ F is the total length of the route which it both the G and H added together.
 \end{figure}
 
 
-With these values given to the nodes the system is now ready to calculate the most optimal route to take. The system will value the nodes and put them in a list so they can be evaluated. The node with the lowest H value to be the fastest way to the end point. After a step is taken the node is being set as closed as can be seen on A* Fig (3) in order to make sure that the system won’t use the same node again. 
+With these values given to the nodes the system is now ready to calculate the most optimal route to take. The system will value the nodes and put them in a list so they can be evaluated. The node with the lowest H value to be the fastest way to the end point. After a step is taken the node is being set as closed as can be seen on A* Fig (3) in order to make sure that the system won’t use the same node again.
 
 
 \begin{figure}[!htbp]
@@ -140,12 +140,12 @@ Now that the game has its modes; mode cycle and pathfinding adapted to the genet
 
 \subsection{Genetic Algorithm}
 
-The information the GA receives is the players high-score and win/lose condition from the last played game. Our GA will be based on the research found in the analysis but before the algorithm is functional the GA variables from the list of requirements has to be fulfilled. 
+The information the GA receives is the players high-score and win/lose condition from the last played game. Our GA will be based on the research found in the analysis but before the algorithm is functional the GA variables from the list of requirements has to be fulfilled.
 
 
 \subsubsection{Chromosomes}
 
-Each chromosome serves as a single solution and in our case we want to find a way to optimize the modes for our ghosts. So each solution should contain a set of four genes of different sets of modes that combined should be able to make the game more challenging for the player playing with ghosts that has the next generation modes. 
+Each chromosome serves as a single solution and in our case we want to find a way to optimize the modes for our ghosts. So each solution should contain a set of four genes of different sets of modes that combined should be able to make the game more challenging for the player playing with ghosts that has the next generation modes.
 
 \subsubsection{Population Size}
 
@@ -154,7 +154,7 @@ The population size is based on the amount of simulation that our system can pro
 
 \subsubsection{Fitness function and Fitness Score}
 
-The fitness function is going to be based on the simulation high scores. After the simulations has been played each simulation has been given a high score of how well pacman did in the current round. If pacman/player dies with a low highscore, it means that the ghosts have been very 
+The fitness function is going to be based on the simulation high scores. After the simulations has been played each simulation has been given a high score of how well pacman did in the current round. If pacman/player dies with a low highscore, it means that the ghosts have been very
 
 successful and that chromosome then gets a high fitness score The simulations will be compared and the simulation that gave pacman the lowest high score will be the winner of that current generation.
 
@@ -166,9 +166,9 @@ We are looking for a selection method that increases fast and keeps the best sol
 
 \subsubsection{Crossover}
 The crossover is based on our research and is being set to 80%
- 
+
 Single Point Crossover:
-This method works by taking one small part of a chromosome A and swaps that into chromosome B and by that create a changed chromosome that can be tested once again (See fig. 1). 
+This method works by taking one small part of a chromosome A and swaps that into chromosome B and by that create a changed chromosome that can be tested once again (See fig. 1).
 
 
 \begin{figure}[!htbp]
@@ -186,7 +186,7 @@ As mutation is there to create small random changes in the genes we want it to b
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[scale=0.5]{D11.jpg}
+\includegraphics[scale=0.5]{D11.png}
 \caption{ UML }
 \label{fig:UML}
 \end{figure}
@@ -210,7 +210,7 @@ An amount of simulations is being played based on the population size and will g
 
 \item The simulations will be evaluated and the winning chromosome will be returned to the Pacman game.
 
-\item The player will play a game with the new generation of ghost modes that should match the players performance. 
+\item The player will play a game with the new generation of ghost modes that should match the players performance.
 
 \end{enumerate}
 
